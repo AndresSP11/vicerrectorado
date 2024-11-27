@@ -45,6 +45,7 @@
         </header>
 
         <section class="container">
+            <div class="modal"></div>
             <div class="title-cont">
               <p>Gestion de Cuentas</p>   
             </div>
