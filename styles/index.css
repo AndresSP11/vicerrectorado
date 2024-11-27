@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+}
+.fondo{
+    position: relative;
+    height: 100vh;
+    background: url('../imagenes/reunionimg.png');
+    /* border: 2px solid rgb(255, 204, 0); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 55% bottom 35%;
+}
+
+.cabezal{
+    height: 110px;
+    background-color: #C23232;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.barraV_father{
+    display: flex;
+    border: #fff 10px ;
+    gap: 10px;
+}
+.barraV{
+    height: 110px;
+    width: 12px;
+    background-color: #fff;
+
+}
+.title-vra, .title-sgp{
+    font-family: "Oswald", sans-serif;
+    font-size:4rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+.contenedor{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    background-color: #fff;
+    width: 50%;
+    padding: 40px 130px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: solid 2px #C23232;
+}
+.formulario h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+}
+
+.formulario div label{
+    font-family: "Oswald", sans-serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.formulario div input{
+    font-family: "Oswald", sans-serif;
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 100%;
+    border: #C23232 solid 1px;
+}
+
+.inputSubmit{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 1.8rem;
+    border: none;
+    background-color: #C23232;
+    font-weight: 700;
+    color: #fff;
+}
+.formulario a{
+    text-align: end;
+    margin-top: 15px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #C23232;
+    font-weight: 700;
+
+}
+.boton{
+    position: absolute;
+    padding: 1.5px;
+}
+
+
+
+.eye-1 {
+    animation: eye 2.4s infinite;
+  }
+
+  .eye-2 {
+    animation: squeeze 2.4s infinite;
+  }
+
+  @keyframes eye {
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+
+    93% {
+      transform: translateY(15px) scaleY(0)
+    }
+
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes squeeze {
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+
+    93% {
+      transform: translateY(3px) scaleY(0.8)
+    }
+
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
