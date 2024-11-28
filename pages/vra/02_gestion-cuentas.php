@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Cuentas</title>
-    <link rel="stylesheet" href="../../styles/vra/gestion-cuentas.css">
+    <link rel="stylesheet" href="../../styles/vra/02_gestion-cuentas.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

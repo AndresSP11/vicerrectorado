@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión Actividad Docente</title>
-    <link rel="stylesheet" href="../../styles/horario/03_registropersonalizado.css">
+    <title>Docente Personal</title>
+    <link rel="stylesheet" href="/styles/departamento-academico/03_docente-personal.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

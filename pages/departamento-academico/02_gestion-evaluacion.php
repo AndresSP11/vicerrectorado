@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión Actividad Docente</title>
-    <link rel="stylesheet" href="/styles/vra/gestion-actividades-doc.css">
+    <title>Gestión Evaluacion</title>
+    <link rel="stylesheet" href="/styles/departamento-academico/02_gestion-evaluacion.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +17,6 @@
 
 </head>
 <body>
-
-    <!-- Fondo oscuro -->
-    <div id="overlay" class="overlay hidden"></div>
-    
-    <!-- Modal -->
-    <div id="modal" class="modal hidden">
-        <h2>Registrar fecha límite</h2>
-        <div class="form">
-            <div class="section">
-                <label>Fecha límite:</label>
-                <input type="date" name="fecha-limite" id="fecha-limite">
-            </div>
-            <div class="section">
-                <label>Fecha aviso:</label>
-                <input type="date" name="fecha-aviso" id="fecha-aviso">
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="cancelButton" id="cancelButton">Cancelar</button>
-            <button class="acceptButton" id="acceptButton">Aceptar</button>
-        </div>
-    </div>
-
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
@@ -69,7 +46,8 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Gestion de Actividad Docente</p>   
+              <!-- <p class="academico">Periodo Academico:24-1</p> -->
+              <p>Registro personalizado de horarios</p>   
             </div>
 
             <div class="search">
@@ -77,52 +55,37 @@
                     <div class="left_children">
                         <label for="search-type" class="search-text">Período:</label>
                         <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
+                            <option value="" disabled selected hidden>Tipo de Busqueda</option>
                             <option value="24-1">24-1</option>
                             <option value="24-2">24-2</option>
                         </select>
                     </div>
                     <div class="left_children">
-                        <label for="search-type" class="search-text">Tipo:</label>
+                        <label for="search-type" class="search-text">Tipo de hora:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="carga-horaria">Carga horaria</option>
-                            <option value="evidencias">Evidencias</option>
+                            <option value="Plan-horas">Plan de horas</option>
+                            <option value="Evidencias">Evidencias</option>
                         </select>
                     </div>
+                   
                 </div>
 
-                <div class="left">
-                    <div class="fecha-button">
-                        <button id="fechaButton">Revisar fecha limite</button>
-                    </div>
-                </div>
-                
-                <div class="left">
+                <div class="right">
+                    
                     <div class="left_children">
-                        <label for="search-type" class="search-text">Revisados:</label>
+                        <label for="search-type" class="search-text">Tipo de hora:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="">0</option>
-                            <option value="">1</option>
+                            <option value="Plan-horas">Sin revisar</option>
+                            <option value="Evidencias">Revisado</option>
                         </select>
                     </div>
-                    <div class="left_children">
-                        <label for="search-type" class="search-text">Facultad:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="">FIIS</option>
-                            <option value="">FIC</option>
-                            <option value="">FAUA</option>
-                            <option value="">FIQT</option>
-                            <option value="">FIM</option>
-                            <option value="">FIGMM</option>
-                            <option value="">FEC</option>
-                            <option value="">FEROP</option>
-                            <option value="">FIP</option>
-                            <option value="">FC</option>
-                        </select>
-                    </div>
+                    <!-- <div class="right_children">
+                        <button class="boton-aceptar">
+                            Aceptar
+                        </button>
+                    </div> -->
                 </div>
             </div>
 
@@ -135,34 +98,26 @@
                     <thead>
                         <tr>
                             
-                            <th>DOCENTE</th>
-                            <th>HORAS LECTIVAS</th>
-                            <th>HORAS NO LECTIVAS</th>
-                            <th>%CAMBIOS</th>
-                            <th>CORRECTOS</th>
-                            <th>INCORRECTOS</th>
-                            <th>REVISIONES</th>
+                            <th>Docente</th>
+                            <th>Horas Lectivas</th>
+                            <th>Horas No Lectivas</th>
+                            <th>% Cambios</th>
+                            <th>Correcto</th>
+                            <th>Incorrectos</th>
+                            <th>Revisiones</th>
+                           
                             
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        
                         <tr>
-                            <td>Daniel Llanos Panduro</td>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
                             <td>12</td>
                             <td>40</td>
-                            <td>10%</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                                <p class="rev_button">0</p>
-                            </td>
-                        </tr>
-                        <!-- Agrega más filas aquí según sea necesario -->
-                        <tr>
-                            <td>Daniel Llanos Panduro</td>
-                            <td>12</td>
-                            <td>40</td>
-                            <td>10%</td>
+                            <td>10 %</td>
                             <td>0</td>
                             <td>0</td>
                             <td>
@@ -170,10 +125,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Daniel Llanos Panduro</td>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
                             <td>12</td>
                             <td>40</td>
-                            <td>10%</td>
+                            <td>10 %</td>
                             <td>0</td>
                             <td>0</td>
                             <td>
@@ -181,10 +137,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Daniel Llanos Panduro</td>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
                             <td>12</td>
                             <td>40</td>
-                            <td>10%</td>
+                            <td>10 %</td>
                             <td>0</td>
                             <td>0</td>
                             <td>
@@ -192,10 +149,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Daniel Llanos Panduro</td>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
                             <td>12</td>
                             <td>40</td>
-                            <td>10%</td>
+                            <td>10 %</td>
                             <td>0</td>
                             <td>0</td>
                             <td>
@@ -203,10 +161,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Daniel Llanos Panduro</td>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
                             <td>12</td>
                             <td>40</td>
-                            <td>10%</td>
+                            <td>10 %</td>
                             <td>0</td>
                             <td>0</td>
                             <td>
@@ -214,10 +173,35 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Daniel Llanos Panduro</td>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
                             <td>12</td>
                             <td>40</td>
-                            <td>10%</td>
+                            <td>10 %</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <p class="rev_button">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10 %</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <p class="rev_button">0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Ricardo Ulloa Rodriguez</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10 %</td>
                             <td>0</td>
                             <td>0</td>
                             <td>
@@ -232,7 +216,8 @@
             </div>
         </section>
 
+
+
     </div>
-    <script src="/js/vra/gestion-actividades-doc.js"></script>
 </body>
 </html>

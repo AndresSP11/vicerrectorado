@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión Actividad Docente</title>
-    <link rel="stylesheet" href="../../styles/horario/03_registropersonalizado.css">
+    <title>Gestión de Evaluaciones</title>
+    <link rel="stylesheet" href="/styles/supervision/02_gestion-evaluaciones.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
 
 </head>
 <body>
+
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
@@ -34,7 +35,7 @@
                 <div class="left-barraV_father"></div>
                 <div class="cont-user">
                     <div class="user-data">
-                        <p>Rol: Administrador</p>
+                        <p>Rol: Supervisor</p>
                         <p>Tino Reyna Villaverde</p>
                     </div>
                     <div>
@@ -46,8 +47,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p class="academico">Periodo Academico:24-1</p>
-              <p>Registro personalizado de horarios</p>   
+              <p>Gestión de Evaluaciones</p>   
             </div>
 
             <div class="search">
@@ -55,38 +55,29 @@
                     <div class="left_children">
                         <label for="search-type" class="search-text">Período:</label>
                         <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Tipo de Busqueda</option>
+                            <option value="" disabled selected hidden>Seleccionar</option>
                             <option value="24-1">24-1</option>
                             <option value="24-2">24-2</option>
                         </select>
                     </div>
                     <div class="left_children">
-                        <label for="search-type" class="search-text">Tipo de hora:</label>
+                        <label for="search-type" class="search-text">Departamento:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="Plan-horas">Plan de horas</option>
-                            <option value="Evidencias">Evidencias</option>
+                            <option value="carga-horaria">Carga horaria</option>
+                            <option value="evidencias">Evidencias</option>
                         </select>
                     </div>
-                    <div class="left_children">
-                        <label for="search-type" class="search-text">Justificacion:</label>
-                        <input type="text" class="text-just">
-                    </div>
                 </div>
-
-                <div class="right">
-                    <div class="right_children">
-                        <label for="search-type" class="search-text">Ingrese el dato:</label>
-                        <input type="text">
-                    </div>
-                    <div class="right_children">
-                        <label for="search-type" class="search-text">Ingrese las horas:</label>
-                        <input type="text" >
-                    </div>
-                    <div class="right_children">
-                        <button class="boton-aceptar">
-                            Aceptar
-                        </button>
+                
+                <div class="left">
+                    <div class="left_children">
+                        <button id="fechaButton">Filtrar</button>
+                        <select id="seleccion_tipo" name="search-type">
+                            <option value="" disabled selected hidden>Seleccionar</option>
+                            <option value="">sin revisar</option>
+                            <option value="">revisado</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -100,86 +91,93 @@
                     <thead>
                         <tr>
                             
-                            <th>Codigo</th>
-                            <th>Docente</th>
-                            <th>D.H</th>
-                            <th>Horas Lectivas</th>
-                            <th>Horas No Lectivas</th>
-                            <th>Estado</th>
-                           
+                            <th>DOCENTE</th>
+                            <th>HORAS LECTIVAS</th>
+                            <th>HORAS NO LECTIVAS</th>
+                            <th>%CAMBIOS</th>
+                            <th>CORRECTOS</th>
+                            <th>INCORRECTOS</th>
+                            <th>REVISIONES</th>
                             
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                         <!-- Agrega más filas aquí según sea necesario -->
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>20200210E</td>
-                            <td>Ricardo Ulloa Rodriguez</td>
-                            <td>TP-05</td>
-                            <td>4</td>
+                            <td>Daniel Llanos Panduro</td>
+                            <td>12</td>
+                            <td>40</td>
+                            <td>10%</td>
+                            <td>0</td>
                             <td>0</td>
                             <td>
-                                <p class="rev_button">Confirmado</p>
+                                <p class="rev_button">0</p>
                             </td>
                         </tr>
                     </tbody>
@@ -190,8 +188,7 @@
             </div>
         </section>
 
-
-
     </div>
+    <script src="/js/supervision/gestion-evaluaciones.js"></script>
 </body>
 </html>
