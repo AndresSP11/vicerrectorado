@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión Actividad Docente</title>
-    <link rel="stylesheet" href="../../styles/vra/gestion-actividades-doc.css">
+    <link rel="stylesheet" href="/styles/vra/gestion-actividades-doc.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,29 @@
 
 </head>
 <body>
+
+    <!-- Fondo oscuro -->
+    <div id="overlay" class="overlay hidden"></div>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <h2>Registrar fecha límite</h2>
+        <div class="form">
+            <div class="section">
+                <label>Fecha límite:</label>
+                <input type="date" name="fecha-limite" id="fecha-limite">
+            </div>
+            <div class="section">
+                <label>Fecha aviso:</label>
+                <input type="date" name="fecha-aviso" id="fecha-aviso">
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="cancelButton" id="cancelButton">Cancelar</button>
+            <button class="acceptButton" id="acceptButton">Aceptar</button>
+        </div>
+    </div>
+
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
@@ -71,7 +94,7 @@
 
                 <div class="left">
                     <div class="fecha-button">
-                        <button>Revisar fecha limite</button>
+                        <button id="fechaButton">Revisar fecha limite</button>
                     </div>
                 </div>
                 
@@ -209,8 +232,7 @@
             </div>
         </section>
 
-
-
     </div>
+    <script src="/js/vra/gestion-actividades-doc.js"></script>
 </body>
 </html>
