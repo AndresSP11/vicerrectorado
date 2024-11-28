@@ -86,8 +86,8 @@
                         <label for="search-type" class="search-text">Tipo:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="Plan-horas">Plan de horas</option>
-                            <option value="Evidencias">Evidencias</option>
+                            <option value="carga-horaria">Carga horaria</option>
+                            <option value="evidencias">Evidencias</option>
                         </select>
                     </div>
                 </div>
