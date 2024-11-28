@@ -13,6 +13,25 @@ body{
 header{
     display: flex;
 }
+
+.fecha-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.fecha-button button{
+    background-color: blue;
+    padding: 6px 40px;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .fondo{
     position: relative;
     height: 100vh;
@@ -92,14 +111,24 @@ header{
     margin: auto;
     margin-top: 20px;
     /* border: solid black 1px; */
+    position: relative;
 }
 .title-cont{
-    position: relative;
     background-color: #C23232;
     font-size: 2.4rem;
     width: 100%;
     padding: 10px;
     border-radius: 0px 30px 0px 0px;
+}
+.academico{
+    position: absolute;
+    background-color: #C23232;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.4rem;
+    top: -30px;
+    left: 43%;
+    border-radius: 10px 10px 0px 0px;
 }
 .title-cont p{
     font-size: 2.4rem;
@@ -117,6 +146,26 @@ header{
 .buttons-doc{
     
 }
+
+.excel-button {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: start;
+}
+
+.excel-button button{
+    background-color: #008000;
+    padding: 6px 40px;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .manual{
     width: 100%;
     display: flex;
@@ -166,20 +215,33 @@ background-color: rgb(31, 1, 150);
     justify-content: space-between;
 }
 .left{
-    
+    align-content: flex-end;
 }
 .left .left_children{
     margin-top: 20px;
+    
+    display: flex;
+}
+.left .left_children input{
+    display: inline-block;
+    width: 300px;
+}
+.left .left_children .search-text{
+    display: inline-block;
+    width: 150px;
 }
 .search-text{
     background-color: #cd2f2f; /* Rojo intenso */
     color: white; /* Texto blanco */
     padding: 10px 15px;
     border-radius: 5px 0 0 5px;
+    width: 150px;
     font-size: 1.9rem;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
+    display: inline-block;
     margin-right: 5px; /* Separación del select */
+    
 }
 
 .left_children select{
@@ -195,15 +257,62 @@ background-color: rgb(31, 1, 150);
     -webkit-appearance: none;
     -moz-appearance: none;
     transition: ease-in-out all .3s;
-    width: 150px;
+    
 }
 .left_children select:hover{
     background-color:  #cd2f2f; 
     color: #fff;
 }
+.text-just{
+    width: 300px;
+    font-size: 1.3rem;
+    
+}
+.right_children{
+    
+    padding: 10px;
+}
+
+.right_children select{
+    
+        background-color: white;
+        color: #333; /* Texto negro */
+        border: 1px solid #cd2f2f; /* Borde rojo */
+        font-family: "Oswald", sans-serif;
+        padding: 8px 12px;
+        border-radius: 0 5px 5px 0;
+        font-size: 1.9rem;
+        outline: none;
+        appearance: none; /* Elimina la flecha predeterminada */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        transition: ease-in-out all .3s;
+        
+   
+    
+        background-color:  #cd2f2f; 
+        color: #fff;
+        display: inline-block;
+        padding-top: 5px;
+    }
+.right_children .search-text{
+    display: inline-block;
+    width: 210px;
+}
+
+.rev_button {
+    background-color: #cd2f2f; /* Rojo intenso */
+    color: white; /* Texto blanco */
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
 
 .right{
     margin-top: 25px;
+    
 }
 .right input{
     background-color: white;
@@ -307,3 +416,19 @@ background-color: rgb(31, 1, 150);
 background-color: rgb(31, 1, 150);
    
 }
+
+.boton-aceptar{
+    padding: 10px 60px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: rgb(67, 67, 206);
+    cursor: pointer;
+}
+.boton-aceptar:hover{
+    
+    background-color: rgb(12, 12, 166);
+    
+}
+
