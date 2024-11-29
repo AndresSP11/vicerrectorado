@@ -1,0 +1,442 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+}
+
+.fondo{
+    position: relative;
+    height: 100vh;
+    background: url('../imagenes/reunionimg.png');
+    /* border: 2px solid rgb(255, 204, 0); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 55% bottom 35%;
+}
+
+.cabezal{
+    height: 110px;
+    background-color: #C23232;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.barraV_father{
+    display: flex;
+    border: #fff 10px ;
+    gap: 10px;
+}
+/* Rigth Barra Lateral */
+.left-barraV_father{
+    background: white;
+    width: 50%;
+    height: 110px;
+}
+.barraV{
+    height: 110px;
+    width: 12px;
+    background-color: #fff;
+
+}
+.title-vra, .title-sgp{
+    font-family: "Oswald", sans-serif;
+    font-size:4rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+.contenedor{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cont-user{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-left: 50px;
+    color: #fff;
+    border-radius: 20px ;
+}
+.log-user{
+    margin-top: 8px;
+    font-size: 3.2rem;
+}
+.user-data{
+    font-size: 3.2rem;
+    font-family: "Oswald", sans-serif;
+
+}
+
+/* CUERPO DEL CONTENEDOR  */
+
+.container-cuerpo{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: solid black 1px; */
+}
+.title-cont{
+    width: 100%;
+}
+.title-cont p{
+    font-size: 1.8rem;
+    color: #666262;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.user-welcome{
+
+    font-size: 3.4rem;
+}
+
+.buttons-page{
+    
+}
+
+.manual{
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+.manual button{
+    padding: 10px;
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    border: none;
+    background-color: #cd2f2f;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out .4s ;
+    margin-top: 20px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.salida{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.salida a{
+    margin-top: 30px;
+    background-color: blue;
+    padding: 6px 40px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.salida a:hover{
+background-color: rgb(31, 1, 150);
+   
+}
+/* BUSCADOR Y TABLAS */
+
+.search{
+    width: 100%;
+    /* border: black solid 2px; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    align-content: flex-start;
+}
+.left .left_children{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left .left_children button{
+    margin-left: 5px;
+    padding: 0 5px 0 5px;
+    background-color: blue;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.left .right_children{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.search-text{
+    background-color: #cd2f2f; /* Rojo intenso */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border-radius: 5px 0 0 5px;
+    width: 25%;
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    margin-right: 5px; /* Separación del select */
+}
+
+.sel-cumpl {
+    background-color: white;
+    color: #333; /* Texto negro */
+    border: 1px solid #cd2f2f; /* Borde rojo */
+    font-family: "Oswald", sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    outline: none;
+    transition: ease-in-out all .3s;
+    width: 100%;
+}
+
+.cell-view {
+    text-align: left;
+}
+
+.cell-view span {
+    font-size: 14px;
+}
+
+.cell-view img {
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.state-text{
+    color: black; /* Texto blanco */
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    width: 50%;
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    border: 2px solid #b71c1c; /* Borde rojo */
+}
+
+.rev_button {
+    background-color: #cd2f2f; /* Rojo intenso */
+    color: white; /* Texto blanco */
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.right{
+    margin-top: 25px;
+}
+.right input{
+    background-color: white;
+    color: #333; /* Texto negro */
+    border: 1px solid #cd2f2f; /* Borde rojo */
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    outline: none;
+    appearance: none; /* Elimina la flecha predeterminada */
+    font-family: "Oswald", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    width: 20rem;
+}
+.right input:hover{
+    
+    color: #333; /* Texto negro */
+    border: 3px solid #cd2f2f; /* Borde rojo */
+    
+    
+}
+
+/* ############### TABLA DCONTAINER ###################### */
+.tabla-container {
+    margin: auto;
+    width: 80%;
+    max-height: 300px; /* Altura máxima del área de desplazamiento */
+    overflow-y: auto; /* Activar scroll vertical */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Espacio con respecto al pie de página */
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla thead {
+    position: sticky; /* Para que el encabezado permanezca fijo */
+    top: 0;
+    background-color: #d32f2f; /* Fondo rojo para encabezado */
+    color: white;
+}
+
+.tabla th,
+.tabla td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tabla tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+/* Estilo personalizado para el scroll */
+.tabla-container::-webkit-scrollbar {
+    width: 10px; /* Ancho del scroll */
+}
+
+.tabla-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Fondo del track */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.tabla-container::-webkit-scrollbar-thumb {
+    background-color: #d32f2f; /* Color rojo del scroll */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #f1f1f1; /* Espaciado entre el scroll y el track */
+}
+
+.tabla-container::-webkit-scrollbar-thumb:hover {
+    background-color: #b71c1c; /* Rojo más oscuro al pasar el cursor */
+}
+.salida a{
+    margin-top: 30px;
+    background-color: blue;
+    padding: 6px 40px;
+    font-size: 1.8rem;
+    border-radius: 2px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.salida a:hover{
+    background-color: rgb(31, 1, 150);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+    z-index: 1;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    text-align: center;
+    border: 2px solid #b71c1c; /* Borde rojo */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.section label {
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+    padding-right: 10px;
+}
+
+.section input {
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cancelButton {
+    background-color: #b71c1c;
+    padding: 6px 40px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.acceptButton {
+    background-color: #232ddfc8;
+    padding: 6px 40px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.9rem;
+    color: black;
+}
+
+/* Ocultar elementos por defecto */
+.hidden {
+    display: none;
+}
