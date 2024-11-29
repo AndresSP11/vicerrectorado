@@ -217,19 +217,7 @@ background-color: rgb(31, 1, 150);
 .left{
     align-content: flex-end;
 }
-.left .left_children{
-    margin-top: 20px;
-    
-    display: flex;
-}
-.left .left_children input{
-    display: inline-block;
-    width: 300px;
-}
-.left .left_children .search-text{
-    display: inline-block;
-    width: 150px;
-}
+
 .search-text{
     background-color: #cd2f2f; /* Rojo intenso */
     color: white; /* Texto blanco */
@@ -244,25 +232,8 @@ background-color: rgb(31, 1, 150);
     
 }
 
-.left_children select{
-    background-color: white;
-    color: #333; /* Texto negro */
-    border: 1px solid #cd2f2f; /* Borde rojo */
-    font-family: "Oswald", sans-serif;
-    padding: 8px 12px;
-    border-radius: 0 5px 5px 0;
-    font-size: 1.9rem;
-    outline: none;
-    appearance: none; /* Elimina la flecha predeterminada */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    transition: ease-in-out all .3s;
-    
-}
-.left_children select:hover{
-    background-color:  #cd2f2f; 
-    color: #fff;
-}
+
+
 .text-just{
     width: 300px;
     font-size: 1.3rem;
@@ -270,35 +241,61 @@ background-color: rgb(31, 1, 150);
 }
 .right_children{
     
-    padding: 10px;
+  
 }
 
-.right_children select{
-    
-        background-color: white;
-        color: #333; /* Texto negro */
-        border: 1px solid #cd2f2f; /* Borde rojo */
-        font-family: "Oswald", sans-serif;
-        padding: 8px 12px;
-        border-radius: 0 5px 5px 0;
-        font-size: 1.9rem;
-        outline: none;
-        appearance: none; /* Elimina la flecha predeterminada */
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        transition: ease-in-out all .3s;
-        
-   
-    
-        background-color:  #cd2f2f; 
-        color: #fff;
-        display: inline-block;
-        padding-top: 5px;
-    }
-.right_children .search-text{
+
+.red-contain{
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 700;
+    background-color: #b71c1c;
+    font-family: "Oswald", sans-serif;
     display: inline-block;
-    width: 210px;
+    width: 200px;
 }
+.data-contain{
+    position: relative;
+    padding: 5px 40px;
+    font-size: 2.1rem;
+    font-weight: 600;
+    border: 2px solid #C23232;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    width: 300px;
+
+    border-radius: 0px 10px 10px 0px;
+}
+.father-contain{
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+}
+.absolute-hour{
+    padding: 5px 15px;
+    background-color: rgb(67, 67, 250);
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9f9f9;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+}
+.text-pa{
+    background-color: #b71c1c;
+    padding: 10px 5px;
+    border-radius: 10px 10px 0px 0px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    color: #fff;
+}
+
 
 .rev_button {
     background-color: #cd2f2f; /* Rojo intenso */
@@ -310,32 +307,7 @@ background-color: rgb(31, 1, 150);
     text-align: center;
 }
 
-.right{
-    margin-top: 25px;
-    
-}
-.right input{
-    background-color: white;
-    color: #333; /* Texto negro */
-    border: 1px solid #cd2f2f; /* Borde rojo */
-    padding: 8px 12px;
-    border-radius: 0 5px 5px 0;
-    font-size: 14px;
-    outline: none;
-    appearance: none; /* Elimina la flecha predeterminada */
-    font-family: "Oswald", sans-serif;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    
-    width: 20rem;
-}
-.right input:hover{
-    
-    color: #333; /* Texto negro */
-    border: 3px solid #cd2f2f; /* Borde rojo */
-    
-    
-}
+
 
 /* ############### TABLA DCONTAINER ###################### */
 .tabla-container {
@@ -343,10 +315,11 @@ background-color: rgb(31, 1, 150);
     width: 80%;
     max-height: 300px; /* Altura máxima del área de desplazamiento */
     overflow-y: auto; /* Activar scroll vertical */
-    border: 1px solid #ccc;
+    
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px; /* Espacio con respecto al pie de página */
+
 }
 
 .tabla {
@@ -432,3 +405,47 @@ background-color: rgb(31, 1, 150);
     
 }
 
+.buttons-section{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-section button{
+    margin-top: 15px;
+    padding: 5px 30px;
+    font-size: 1.8rem;
+    font-family: "Oswald", sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+.button-section_l{
+    background-color: blue;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.button-section_l:hover{
+    background-color: rgb(0, 0, 139);
+    
+}
+.button-section_m{
+    background-color: rgb(49, 252, 49);
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.button-section_m:hover{
+    background-color: rgb(2, 199, 2);
+    
+}
+.button-section_r{
+    background-color: purple;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.button-section_r:hover{
+    background-color: rgb(106, 0, 106);
+    
+}

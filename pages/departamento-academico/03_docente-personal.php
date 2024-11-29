@@ -52,51 +52,42 @@
 
             <div class="search">
                 <div class="left">
-                    <div class="left_children">
-                        <label for="search-type" class="search-text">Período:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Tipo de Busqueda</option>
-                            <option value="24-1">24-1</option>
-                            <option value="24-2">24-2</option>
-                        </select>
+                    <div class="father-contain">
+                         <div class=" red-contain">Profesor</div>
+                         <div class="data-contain">Tino Reyna Villaverde</div>
                     </div>
-                    <div class="left_children">
-                        <label for="search-type" class="search-text">Tipo de hora:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="Plan-horas">Plan de horas</option>
-                            <option value="Evidencias">Evidencias</option>
-                        </select>
+                    <div>
+                        <div class="father-contain">
+                            <div class=" red-contain">Horas</div>
+                            <div class="data-contain">20</div>
+                            <div class="absolute-hour">40 Horas</div>
+                        </div>
                     </div>
-                   
                 </div>
 
                 <div class="right">
+                    <div>
+                        <div class="father-contain">
+                            <div class=" red-contain">Facultad</div>
+                            <div class="data-contain">FIIS</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="father-contain">
+                            <div class=" red-contain">Tipo</div>
+                            <div class="data-contain">CAS</div>
+                        </div>
+                    </div>
                     
-                    <div class="left_children">
-                        <label for="search-type" class="search-text">Tipo de hora:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="Plan-horas">Sin revisar</option>
-                            <option value="Evidencias">Revisado</option>
-                        </select>
-                    </div>
-                    <div class="left_children">
-                        <label for="search-type" class="search-text">Tipo de hora:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="Plan-horas">Sin revisar</option>
-                            <option value="Evidencias">Revisado</option>
-                        </select>
-                    </div>
+
                 </div>
             </div>
 
-            <div class="excel-button">
-              <button>Descargar excel</button>   
-            </div>  
-
+           
             <div class="tabla-container">
+                <div class="text-pa">
+                    Plan de Actividades 
+                </div>
                 <table class="tabla" id="tabla">
                     <thead>
                         <tr>
@@ -202,8 +193,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="salida">
-                    <a href="">Regresar</a>
+            <div class=" buttons-section"> 
+                <button class="button-section_l">Regresar</button>
+                <button class="button-section_m">Notificar</button>
+                <button class="button-section_r">Registrar</button>
             </div>
         </section>
 
