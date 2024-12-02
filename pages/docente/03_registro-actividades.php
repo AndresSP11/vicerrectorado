@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Plan de Actividades</title>
+    <title>Registro de Actividades</title>
     <link rel="stylesheet" href="/styles/docente/03_registro-actividades.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,40 @@
 
 </head>
 <body>
+
+    <!-- Fondo oscuro -->
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- Modal imagen-->
+    <div id="modal_imagen" class="modal hidden">
+        <h2>Cargar evidencia</h2>
+        <div class="zona_carga">
+            <img src="/imagenes/subirImagen.png" alt="">
+        </div>
+        <div class="close_buttons">
+            <button class="cancelButton">Cancelar</button>
+            <button class="acceptButton">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- Modal actividad-->
+    <div id="modal_actividad" class="modal hidden">
+        <h2>Registrar fecha límite</h2>
+        <div class="form">
+            <div class="section">
+                <label>Fecha límite:</label>
+                <input type="date" name="fecha-limite" id="fecha-limite">
+            </div>
+            <div class="section">
+                <label>Fecha aviso:</label>
+                <input type="date" name="fecha-aviso" id="fecha-aviso">
+            </div>
+        </div>
+        <div class="close_buttons">
+            <button class="cancelButton">Cancelar</button>
+            <button class="acceptButton">Aceptar</button>
+        </div>
+    </div>
 
     <div class='container-cuerpo'>
         <header>
@@ -47,7 +81,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Gestión de Plan de Actividades</p>   
+              <p>Registro de Actividades no Lectivas</p>   
             </div>
 
             <div class="search">
@@ -75,66 +109,84 @@
             </div>
 
             <div class="tabla-container">
-                <table class="styled-table">
+                <table class="tabla" id="tabla">
                     <thead>
                         <tr>
-                            <th rowspan="2" class="vert">Condición</th>
-                            <th rowspan="2" class="vert">Categoría o Tipo de Contrato</th>
-                            <th rowspan="2" class="vert">D.H. o Clasificación</th>
-                            <th rowspan="2" class="vert">Total de horas (*)</th>
-                            <th colspan="3">Actividad lectiva</th>
-                            <th colspan="12">Actividades no lectiva (horas por semana)</th>
-                        </tr>
-                        <tr>
-                            <th class="vert">Teoría</th>
-                            <th class="vert">Práctica</th>
-                            <th class="vert">Reducción de Carga Lectiva</th>
-                            <th class="vert">Preparación y evaluación</th>
-                            <th class="vert">Capacitación continua</th>
-                            <th class="vert">Materiales formativos</th>
-                            <th class="vert">Investigación</th>
-                            <th class="vert">Investigación no monetaria</th>
-                            <th class="vert">Responsabilidad Social y </br> Extensión Universitaria</th>
-                            <th class="vert">Tutoría (*)</th>
-                            <th class="vert">Asesoría Académica</br>(Retroalimentación) (*)</th>
-                            <th class="vert">Asesoría de tesis (*)</th>
-                            <th class="vert">Asesoría de estudiantes</br>en proyectos de inv.</th>
-                            <th class="vert">Gestión universitaria</th>
-                            <th class="vert">Actividades</br>Administrativas comp.*</th>
+                            
+                            <th>BLOQUE</th>
+                            <th>ACTIVIDAD</th>
+                            <th>HORAS</th>
+                            <th>EVIDENCIA</th>
+                            <th>ESTADO</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>N</td>
-                            <td>AX</td>
-                            <td>TC-40</td>
-                            <td>44</td>
-                            <td>0</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>10</td>
-                            <td>10</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td>Tutoría</td>
+                            <td>Actividad 1</td>
+                            <td>6</td>
+                            <td>
+                                <p class="evi_button blue_button">Subir</p>
+                            </td>
+                            <td>
+                                <p class="rev_button">No revisado</p>
+                            </td>
+                        </tr>
+                        <!-- Agrega más filas aquí según sea necesario -->
+                        <tr>
+                            <td>Asesoría de tesis</td>
+                            <td>Actividad 2</td>
+                            <td>6</td>
+                            <td>
+                                <p class="evi_button green_button">Subido</p>
+                            </td>
+                            <td>
+                                <p class="rev_button">No revisado</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Investigación</td>
+                            <td>Actividad 3</td>
+                            <td>6</td>
+                            <td>
+                                <p class="evi_button green_button">Subido</p>
+                            </td>
+                            <td>
+                                <p class="rev_button">Revisado</p>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="salida">
                 <a href="">Regresar</a>
-                <a href="">Registrar</a>
+                <button href="" id="agregarButton">Agregar</button>
             </div>
         </section>
 
     </div>
-    <script src="/js/vra/gestion-actividades-doc.js"></script>
+    <script src="/js/docente/03_registro-actividades.js"></script>
 </body>
 </html>

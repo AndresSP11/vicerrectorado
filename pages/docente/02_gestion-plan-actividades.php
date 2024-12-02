@@ -65,7 +65,7 @@
                 <div class="left">
                     <div class="right_children">
                         <label for="search-type" class="search-text">Fecha límite</label>
-                        <label for="search-type" class="state-text">24/12/2024</label>
+                        <label for="search-type" class="state-text">24/10/2024</label>
                     </div>
                     <div class="right_children">
                         <label for="search-type" class="search-text">Estado</label>
