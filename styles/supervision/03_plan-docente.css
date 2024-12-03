@@ -166,7 +166,9 @@ background-color: rgb(31, 1, 150);
     flex-direction: row;
 }
 
-.left .left_children button{
+.left .left_children span {
+    display: flex;
+    align-items: center;
     margin-left: 5px;
     padding: 0 5px 0 5px;
     background-color: blue;

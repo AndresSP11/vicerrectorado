@@ -59,7 +59,7 @@
                     <div class="left_children">
                             <label for="search-type" class="search-text">Horas</label>
                             <label for="search-type" class="state-text">20</label>
-                            <button id="fechaButton">40 horas</button>
+                            <span id="horas-no-lectivas">40 horas</span>
                     </div>
                 </div>
                 

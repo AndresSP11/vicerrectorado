@@ -45,44 +45,46 @@
         </header>
 
         <section class="container">
-            <div class="modal"></div>
             <div class="title-cont">
               <p>Gestion de Cuentas</p>   
             </div>
 
             <div class="search">
-                        <div class="left">
-                            <div class="left_children">
-                                <label for="search-type" class="search-text">Tipo de búsqueda:</label>
-                                <select id="seleccion_tipo" name="search-type">
-                                    <option value="" disabled selected hidden>Seleccionar</option>
-                                    <option value="fichador">Número de receta</option>
-                                    <option value="codigo-alumno">Período académico</option>
-                                </select>
-                            </div>
-                            <div class="left_children">
-                                <label for="search-type" class="search-text">Tipo de búsqueda:</label>
-                                <select id="seleccion_tipo" name="search-type">
-                                    <option value="" disabled selected hidden>Seleccionar</option>
-                                    <option value="">FIIS</option>
-                                    <option value="">FIC</option>
-                                    <option value="">FAUA</option>
-                                    <option value="">FIQT</option>
-                                    <option value="">FIM</option>
-                                    <option value="">FIGMM</option>
-                                    <option value="">FEC</option>
-                                    <option value="">FEROP</option>
-                                    <option value="">FIP</option>
-                                    <option value="">FC</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="right">
-                            <label for="search-input" class="search-text">Ingrese el dato:</label>
-                            <input type="text" id="dato_texto" name="search-input">
-                        </div>
+                <div class="left">
+                    <div class="left_children">
+                        <label for="search-type" class="search-text">Tipo de búsqueda:</label>
+                        <select id="seleccion_tipo" name="search-type">
+                            <option value="" disabled selected hidden>Seleccionar</option>
+                            <option value="fichador">Número de receta</option>
+                            <option value="codigo-alumno">Período académico</option>
+                        </select>
+                    </div>
+                    <div class="left_children">
+                        <label for="search-type" class="search-text">Facultad:</label>
+                        <select id="seleccion_tipo" name="search-type">
+                            <option value="" disabled selected hidden>Seleccionar</option>
+                            <option value="">FIIS</option>
+                            <option value="">FIC</option>
+                            <option value="">FAUA</option>
+                            <option value="">FIQT</option>
+                            <option value="">FIM</option>
+                            <option value="">FIGMM</option>
+                            <option value="">FEC</option>
+                            <option value="">FEROP</option>
+                            <option value="">FIP</option>
+                            <option value="">FC</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="right_children">
+                        <label for="search-input" class="search-text">Ingrese el dato:</label>
+                        <input type="text" id="dato_texto" name="search-input">
+                    </div>
+                </div>
             </div>
+
             <div class="tabla-container">
                 <table class="tabla" id="tabla">
                     <thead>

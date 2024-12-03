@@ -16,7 +16,7 @@ header{
 .fondo{
     position: relative;
     height: 100vh;
-    background: url('../imagenes/reunionimg.png');
+    background: url('/imagenes/reunionimg.png');
     /* border: 2px solid rgb(255, 204, 0); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,21 +165,15 @@ background-color: rgb(31, 1, 150);
     display: flex;
     justify-content: space-between;
 }
+
 .left{
-    
+    align-content: flex-start;
 }
+
 .left .left_children{
     margin-top: 20px;
-}
-.search-text{
-    background-color: #cd2f2f; /* Rojo intenso */
-    color: white; /* Texto blanco */
-    padding: 10px 15px;
-    border-radius: 5px 0 0 5px;
-    font-size: 1.9rem;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    margin-right: 5px; /* Separación del select */
+    width: 400px;
+    display: flex;
 }
 
 .left_children select{
@@ -197,9 +191,35 @@ background-color: rgb(31, 1, 150);
     transition: ease-in-out all .3s;
     width: 150px;
 }
+
 .left_children select:hover{
     background-color:  #cd2f2f; 
     color: #fff;
+}
+
+.left .right_children{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left .right_children input{
+    width: 150px;
+    border: 1px solid #cd2f2f;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-text{
+    background-color: #cd2f2f; /* Rojo intenso */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    margin-right: 5px; /* Separación del select */
+    width: 45%;
 }
 
 .right{

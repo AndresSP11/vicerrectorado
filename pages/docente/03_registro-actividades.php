@@ -34,16 +34,32 @@
     </div>
 
     <!-- Modal actividad-->
-    <div id="modal_actividad" class="modal hidden">
-        <h2>Registrar fecha límite</h2>
+    <div id="modal_actividad" class="modal hidden hidden hidden hidden">
+        <h2>Registrar de Actividad</h2>
         <div class="form">
             <div class="section">
-                <label>Fecha límite:</label>
-                <input type="date" name="fecha-limite" id="fecha-limite">
+                <div class="sub-section">
+                    <label>Actividad:</label>
+                    <input type="text" name="actividad" id="actividad">
+                </div>
+                <div class="sub-section">
+                    <label>Bloque:</label>
+                    <select id="seleccion_bloque">
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="">Tutoría</option>
+                        <option value="">Investigación</option>
+                    </select>
+                </div>
             </div>
             <div class="section">
-                <label>Fecha aviso:</label>
-                <input type="date" name="fecha-aviso" id="fecha-aviso">
+                <div class="sub-section">
+                    <label>Horas:</label>
+                    <input type="date" name="horas" id="horas">
+                </div>
+                <div class="sub-section">
+                    <label>Evidencia:</label>
+                    <span>Subido</span>
+                </div>
             </div>
         </div>
         <div class="close_buttons">
@@ -55,7 +71,7 @@
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
-            <img src="../../imagenes/logouni.png" alt="">
+            <img src="/imagenes/logouni.png" alt="">
             <div class="cabezal">
                 <p class="title-vra">VRA UNI</p>
                 <div class="barraV_father">
