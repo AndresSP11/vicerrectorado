@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Cuentas</title>
-    <link rel="stylesheet" href="/styles/vra/02_gestion-cuentas.css">
+    <link rel="stylesheet" href="/styles/decano/02_gestion-cuentas.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
-            <img src="../../imagenes/logouni.png" alt="">
+            <img src="/imagenes/logouni.png" alt="">
             <div class="cabezal">
                 <p class="title-vra">VRA UNI</p>
                 <div class="barraV_father">
@@ -34,8 +34,8 @@
                 <div class="left-barraV_father"></div>
                 <div class="cont-user">
                     <div class="user-data">
-                        <p>Rol: Administrador</p>
-                        <p>Tino Reyna Villaverde</p>
+                        <p>Rol: Decano</p>
+                        <p>Mery Morales Cuellar</p>
                     </div>
                     <div>
                         <i class='bx bxs-user log-user'></i> 
@@ -61,7 +61,7 @@
                                 </select>
                             </div>
                             <div class="left_children">
-                                <label for="search-type" class="search-text">Tipo de búsqueda:</label>
+                                <label for="search-type" class="search-text">Facultad:</label>
                                 <select id="seleccion_tipo" name="search-type">
                                     <option value="" disabled selected hidden>Seleccionar</option>
                                     <option value="">FIIS</option>
