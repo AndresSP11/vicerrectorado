@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Cuentas</title>
-    <link rel="stylesheet" href="../../styles/vra/02_gestion-cuentas.css">
+    <link rel="stylesheet" href="/styles/vra/02_gestion-cuentas.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,74 @@
 
 </head>
 <body>
+
+    <!-- Fondo oscuro -->
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- Modal Usuario-->
+    <div id="modal_usuario" class="modal hidden">
+        <h2>Editar Usuario</h2>
+        <div class="form">
+            <div class="section">
+                <div class="sub-section">
+                    <label>Código:</label>
+                    <span>20202107E</span>
+                </div>
+                <div class="sub-section">
+                    <label>Condición:</label>
+                    <select id="seleccion_bloque">
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="">Contratado</option>
+                        <option value="">Nombrado</option>
+                    </select>
+                </div>
+                <div class="sub-section">
+                    <label>Rol:</label>
+                    <select id="seleccion_bloque">
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="">Decano</option>
+                        <option value="">Docente</option>
+                    </select>
+                </div>
+            </div>
+            <div class="section">
+                <div class="sub-section">
+                    <label>Nombre:</label>
+                    <span>James Torres</span>
+                </div>
+                <div class="sub-section">
+                    <label>Contrato:</label>
+                    <select id="seleccion_bloque">
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="">Tipo A</option>
+                        <option value="">Tipo B</option>
+                    </select>
+                </div>
+                <div class="sub-section list">
+                    <span class="title">Roles asignados</span>
+                    <div class="cell">
+                        <span>Decano</span>
+                        <img src="/imagenes/Delete.png" alt="">
+                    </div>
+                    <div class="cell">
+                        <span>Docente</span>
+                        <img src="/imagenes/Delete.png" alt="">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="close_buttons">
+            <button class="cancelButton">Cancelar</button>
+            <button class="acceptButton">Aceptar</button>
+        </div>
+    </div>
+
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
-            <img src="../../imagenes/logouni.png" alt="">
+            <img src="/imagenes/logouni.png" alt="">
             <div class="cabezal">
                 <p class="title-vra">VRA UNI</p>
                 <div class="barraV_father">
@@ -101,62 +165,85 @@
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <!-- Agrega más filas aquí según sea necesario -->
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                         <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
-                            <td>Académico</td>
+                            <td class="cell-rol">
+                                <span>Académico</span>
+                                <img class="edit-button" src="/imagenes/change_rol.png" alt="">
+                            </td>
                             <td>Tipo A</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="salida">
-                    <a href="">Regresar</a>
+                <a href="">Regresar</a>
             </div>
         </section>
-
-
-
     </div>
+
+    <script src="/js/vra/02_gestion-cuentas.js"></script>
 </body>
 </html>
