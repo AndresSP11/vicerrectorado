@@ -55,8 +55,8 @@
                         <label for="search-type" class="search-text">Tipo de búsqueda:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="fichador">Número de receta</option>
-                            <option value="codigo-alumno">Período académico</option>
+                            <option value="codigo">Código</option>
+                            <option value="nombre">Nombre</option>
                         </select>
                     </div>
                     <div class="left_children">

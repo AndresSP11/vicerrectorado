@@ -208,6 +208,14 @@ background-color: rgb(31, 1, 150);
     width: 150px;
     border: 1px solid #cd2f2f;
     border-radius: 0 5px 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+}
+
+.left .right_children input:hover{
+    border: 3px solid #cd2f2f;
 }
 
 .search-text{
