@@ -189,6 +189,6 @@
         </section>
 
     </div>
-    <script src="/js/supervision/gestion-evaluaciones.js"></script>
+    <script src="/js/supervision/02_gestion-evaluaciones.js"></script>
 </body>
 </html>
