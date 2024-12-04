@@ -34,7 +34,7 @@
     </div>
 
     <!-- Modal actividad-->
-    <div id="modal_actividad" class="modal hidden hidden hidden hidden">
+    <div id="modal_actividad" class="modal hidden">
         <h2>Registrar de Actividad</h2>
         <div class="form">
             <div class="section">

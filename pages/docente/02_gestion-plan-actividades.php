@@ -21,7 +21,7 @@
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
-            <img src="../../imagenes/logouni.png" alt="">
+            <img src="/imagenes/logouni.png" alt="">
             <div class="cabezal">
                 <p class="title-vra">VRA UNI</p>
                 <div class="barraV_father">
