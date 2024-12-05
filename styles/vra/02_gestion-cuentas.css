@@ -10,9 +10,6 @@ body{
     height: 100%;
 }
 
-header{
-    display: flex;
-}
 .fondo{
     position: relative;
     height: 100vh;
@@ -23,39 +20,6 @@ header{
     background-position: right 55% bottom 35%;
 }
 
-.cabezal{
-    height: 110px;
-    background-color: #C23232;
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.barraV_father{
-    display: flex;
-    border: #fff 10px ;
-    gap: 10px;
-}
-/* Rigth Barra Lateral */
-.left-barraV_father{
-    background: white;
-    width: 50%;
-    height: 110px;
-}
-.barraV{
-    height: 110px;
-    width: 12px;
-    background-color: #fff;
-
-}
-.title-vra, .title-sgp{
-    font-family: "Oswald", sans-serif;
-    font-size:4rem;
-    margin-left: 2rem;
-    margin-right: 1rem;
-    font-weight: 700;
-    color: #fff;
-}
 .contenedor{
     
     width: 100%;

@@ -1,12 +1,12 @@
 export function agregarCabecera(targetId, rol = 'sin definir', nombre = 'sin definir') {
     // Cargar el template desde el archivo HTML externo
-    fetch('/components/cabecera/cabecera-template.html')
+    fetch('/components/header/header-template.html')
         .then(response => response.text())
         .then(data => {
             // Crear un nuevo div y agregar el contenido del template al DOM
             const div = document.createElement('div');
             div.innerHTML = data;
-            const template = div.querySelector('#cabecera-template');
+            const template = div.querySelector('#header-template');
             const clone = template.content.cloneNode(true);
 
             // Modificar el rol y nombre en el template clonado

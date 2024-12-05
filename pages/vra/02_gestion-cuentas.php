@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Cuentas</title>
     <link rel="stylesheet" href="/styles/vra/02_gestion-cuentas.css">
+    <link rel="stylesheet" href="/components/header/header-template.css"> <!-- componente cabecera -->
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,31 +83,9 @@
     </div>
 
     <div class='container-cuerpo'>
-        <header>
-            <!-- Imagenes. -->
-            <img src="/imagenes/logouni.png" alt="">
-            <div class="cabezal">
-                <p class="title-vra">VRA UNI</p>
-                <div class="barraV_father">
-                    <div class="barraV"></div>
-                    <div class="barraV"></div>
-                    <div class="barraV"></div>
-                    <div class="barraV"></div>
-                    <div class="barraV"></div>
-                    <div class="barraV"></div>
-                </div>
-                <div class="left-barraV_father"></div>
-                <div class="cont-user">
-                    <div class="user-data">
-                        <p>Rol: Administrador</p>
-                        <p>Tino Reyna Villaverde</p>
-                    </div>
-                    <div>
-                        <i class='bx bxs-user log-user'></i> 
-                    </div>
-                </div>
-            </div> 
-        </header>
+
+        <!-- componente cabecera -->
+        <div id="header"></div>
 
         <section class="container">
             <div class="title-cont">
@@ -245,5 +224,12 @@
     </div>
 
     <script src="/js/vra/02_gestion-cuentas.js"></script>
+    <!-- Script que llama a los componentes -->
+    <script type="module">
+        import { agregarCabecera } from '/components/header/header-template.js';
+
+        // Llamar a la función para agregar el componente con valores personalizados
+        agregarCabecera('header', 'Administrador', 'Tino Reyna Villaverde');
+    </script>
 </body>
 </html>

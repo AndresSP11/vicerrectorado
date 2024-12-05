@@ -42,19 +42,20 @@ body{
     width: 100%;
     height: 100%;
 }
+
 .container{
     width: 80%;
     margin: auto;
     margin-top: 20px;
-    /* border: solid black 1px; */
 }
+
 .user-welcome{
     font-family: "Oswald", sans-serif;
-
     font-size: 3.4rem;
 }
 
-.manual{
+
+/* .manual{
     width: 100%;
     display: flex;
     align-items: start;
@@ -94,7 +95,4 @@ body{
 .salida a:hover{
 background-color: rgb(31, 1, 150);
    
-}
-
-
-
+} */
