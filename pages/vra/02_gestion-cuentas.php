@@ -89,7 +89,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Gestion de Cuentas</p>
+                <p>Gestion de Cuentas</p>
             </div>
 
             <div class="search">
@@ -126,7 +126,7 @@
                         <input type="text" id="dato_texto" name="search-input">
                     </div>
                 </div>
-            </div>
+            </div>  
 
             <div class="tabla-container">
                 <table class="tabla" id="tabla">

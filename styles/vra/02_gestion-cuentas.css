@@ -160,15 +160,11 @@ body{
     font-family: "Oswald", sans-serif;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
     width: 20rem;
 }
 .right input:hover{
-    
     color: #333; /* Texto negro */
-    border: 3px solid #cd2f2f; /* Borde rojo */
-    
-    
+    border: 3px solid #cd2f2f; /* Borde rojo */ 
 }
 
 .cell-rol {

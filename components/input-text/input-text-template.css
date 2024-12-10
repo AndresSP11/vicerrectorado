@@ -1,0 +1,97 @@
+.input-text{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal {
+    font-size: 1.5rem;
+    min-height: 3.5rem;
+}
+
+.section{
+    align-content: flex-start;
+}
+
+.sub-section{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+}
+
+.sub-section select{
+    background-color: white;
+    color: #333; /* Texto negro */
+    border: 1px solid #cd2f2f; /* Borde rojo */
+    font-family: "Oswald", sans-serif;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.9rem;
+    outline: none;
+    transition: ease-in-out all .3s;
+    width: 150px;
+}
+
+.sub-section select:hover{
+    background-color:  #cd2f2f; 
+    color: #fff;
+}
+
+
+
+.section .right_children{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section .right_children input{
+    width: 150px;
+    border: 1px solid #cd2f2f;
+    border-radius: 0 5px 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+    width: 50%;
+}
+
+.section .right_children input:hover{
+    border: 3px solid #cd2f2f;
+}
+
+.search-text{
+    background-color: #cd2f2f; /* Rojo intenso */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.9rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    margin-right: 5px; /* Separación del select */
+    width: 45%;
+}
+
+.right{
+    margin-top: 25px;
+}
+.right input{
+    background-color: white;
+    color: #333; /* Texto negro */
+    border: 1px solid #cd2f2f; /* Borde rojo */
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    outline: none;
+    appearance: none; /* Elimina la flecha predeterminada */
+    font-family: "Oswald", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20rem;
+}
+.right input:hover{
+    color: #333; /* Texto negro */
+    border: 3px solid #cd2f2f; /* Borde rojo */ 
+}
