@@ -71,50 +71,6 @@ body{
     font-family: "Oswald", sans-serif;
 }
 
-
-.user-welcome{
-    font-size: 3.4rem;
-}
-
-.manual{
-    width: 100%;
-    display: flex;
-    align-items: start;
-}
-.manual button{
-    padding: 10px;
-    font-size: 1.9rem;
-    font-family: "Oswald", sans-serif;
-    border: none;
-    background-color: #cd2f2f;
-    color: #fff;
-    cursor: pointer;
-    transition: ease-in-out .4s ;
-    margin-top: 20px;
-    border-radius: 0px 10px 0px 0px;
-}
-
-.salida{
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-}
-.salida a{
-    margin-top: 30px;
-    background-color: blue;
-    padding: 6px 40px;
-    font-size: 1.8rem;
-    border-radius: 10px;
-    transition: ease-in-out .4s ;
-    font-family: "Oswald", sans-serif;
-    color: #fff;
-    text-decoration: none;
-}
-.salida a:hover{
-background-color: rgb(31, 1, 150);
-   
-}
 /* BUSCADOR Y TABLAS */
 
 .search{

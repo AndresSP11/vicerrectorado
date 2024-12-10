@@ -19,51 +19,45 @@
 }
 
 .button {
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-.back-button {
-    margin-top: 30px;
-    background-color: blue;
-    padding: 6px 40px;
     font-size: 1.8rem;
-    border-radius: 10px;
-    transition: ease-in-out .4s ;
-    font-family: "Oswald", sans-serif;
-    color: #fff;
-    text-decoration: none;
-}
-
-.back-button:hover {
-    background-color: rgb(31, 1, 150);
-}
-
-.manual-button{
-    padding: 10px;
-    font-size: 1.9rem;
-    font-family: "Oswald", sans-serif;
-    border: none;
-    background-color: #cd2f2f;
-    color: #fff;
+    color: white;
     cursor: pointer;
-    transition: ease-in-out .4s ;
-    margin-top: 20px;
-    border-radius: 0px 10px 0px 0px;
-}
-.manual-button:hover{
-    background: #500000;
+    min-height: 4.5rem;
+    font-family: "Oswald", sans-serif;
 }
 
 .hidden {
     display: none;
+}
+
+.modal {
+    font-size: 1.5rem;
+    min-height: 3.5rem;
+}
+
+.exit-btn {
+    background-color: #2f4fcd;
+    padding: 6px 40px;
+    border-radius: 10px;
+    transition: ease-in-out .4s ;
+    color: #fff;
+    margin-left: auto;
+}
+
+.exit-btn:hover {
+    background-color: rgb(31, 1, 150);
+}
+
+.manual-btn{
+    padding: 10px;
+    border: none;
+    background-color: #cd2f2f;
+    color: #fff;
+    transition: ease-in-out .4s ;
+    border-radius: 0px 10px 0px 0px;
+}
+.manual-btn:hover{
+    background: #500000;
 }

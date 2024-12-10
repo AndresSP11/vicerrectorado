@@ -53,18 +53,23 @@
         agregarBotonMenu('buttons_menu', 'Gestión de Cuentas');
         agregarBotonMenu('buttons_menu', 'Gestión de Actividades del Docente');
 
+        // Configuración para los botones inferiores
         const buttonConfig = [
-            { visible: true, label: 'Descargar Manual', action: () => alert('Descargando manual...') },
-            { visible: false, label: 'Salir', action: () => alert('Saliendo...') },
-            { visible: false, label: 'Botón Oculto', action: () => alert('No debería verse') },
-            { visible: true, label: 'Ayuda', action: () => alert('Mostrando ayuda...') }
+            { modal: false, type: 'manual'},
+            { modal: false, type: ''},
+            { modal: false, type: ''},
+            { modal: false, type: 'exit'}
         ];
+        
+        /* const buttonConfig = [
+            { visible: true, label: 'Manual de Usuario', action: () => alert('Descargando manual...') },
+            { visible: false, label: 'Nombre Boton', action: () => alert('Funcion...') },
+            { visible: false, label: 'Nombre Boton', action: () => alert('Funcion...') },
+            { visible: true, label: 'Salir', action: () => alert('Saliendo...') }
+        ]; */
 
         // Cargar el componente con la configuración
-
-        document.addEventListener('DOMContentLoaded', () => {
-            agregarBotonInferior('buttons_lower', buttonConfig);
-        });
+        agregarBotonInferior('buttons_lower', buttonConfig);
     </script>
 </body>
 </html>

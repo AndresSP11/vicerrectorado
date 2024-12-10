@@ -89,7 +89,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Gestion de Cuentas</p>   
+              <p>Gestion de Cuentas</p>
             </div>
 
             <div class="search">
