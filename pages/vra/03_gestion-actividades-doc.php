@@ -228,11 +228,11 @@
                 </table>
             </div>
             <div class="salida">
-                    <a href="">Regresar</a>
+                    <a href="./01_menu-vra.php">Regresar</a>
             </div>
         </section>
 
     </div>
     <script src="/js/vra/gestion-actividades-doc.js"></script>
 </body>
-</html>
+</html> 

@@ -47,12 +47,13 @@
             <h1 class="user-welcome">Bienvenido, Tino Reyna Villaverde</h1>
             <div>
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Cuentas</div>
+                    <a href="./02_gestion-cuentas.php" class="button-sup_red">Gestión de Cuentas</a>
                     <div class="button-inf_white"></div>
                 </div>
                 
+                
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Actividades del Docente</div>
+                    <a class="button-sup_red" href="./03_gestion-actividades-doc.php">Gestión de Actividades del Docente</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>
