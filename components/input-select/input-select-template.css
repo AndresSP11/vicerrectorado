@@ -1,4 +1,4 @@
-.input-text{
+.input-select{
     width: 100%;
     margin-top: 20px;
     display: flex;
@@ -20,7 +20,7 @@
     width: 45%;
 }
 
-.input-cont{
+.select-cont{
     width: 150px;
     border: 2px solid #cd2f2f;
     border-radius: 0 5px 5px 0;
@@ -31,7 +31,6 @@
     width: 50%;
 }
 
-.input-cont:hover{
+.select-cont:hover{
     border: 3px solid #cd2f2f;
 }
-

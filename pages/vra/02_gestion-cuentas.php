@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Cuentas</title>
     <link rel="stylesheet" href="/styles/vra/02_gestion-cuentas.css">
-    <link rel="stylesheet" href="/components/header/header-template.css"> <!-- componente cabecera -->
+    <link rel="stylesheet" href="/components/header/header-template.css"> <!-- componente header -->
+    <link rel="stylesheet" href="/components/input-text/input-text-template.css"> <!-- componente input-text -->
+    <link rel="stylesheet" href="/components/input-select/input-select-template.css"> <!-- componente input-select -->
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,7 +94,9 @@
                 <p>Gestion de Cuentas</p>
             </div>
 
-            <div class="search">
+            <div class="filter-top"></div>
+
+            <!-- <div class="search">
                 <div class="left">
                     <div class="left_children">
                         <label for="search-type" class="search-text">Tipo de búsqueda:</label>
@@ -126,7 +130,7 @@
                         <input type="text" id="dato_texto" name="search-input">
                     </div>
                 </div>
-            </div>  
+            </div> -->  
 
             <div class="tabla-container">
                 <table class="tabla" id="tabla">
@@ -227,9 +231,63 @@
     <!-- Script que llama a los componentes -->
     <script type="module">
         import { agregarCabecera } from '/components/header/header-template.js';
+        import { agregarInputText } from '/components/input-text/input-text-template.js';
+        import { agregarInputSelect } from '/components/input-select/input-select-template.js';
+        import { agregarFilterTop } from '/components/filter-top/filter-top-template.js';
+        import { FilterTop } from '/components/filter-top/filter-top-template.js';
 
-        // Llamar a la función para agregar el componente con valores personalizados
+        /* const optionsSearch = [
+            { text: "Opción 1", value: "1" },
+            { text: "Opción 2", value: "2" },
+            { text: "Opción 3", value: "3" },
+            { text: "Opción 4", value: "4" }
+            ];
+
+        const optionsFacultad = [
+            { text: "Opción 1", value: "1" },
+            { text: "Opción 2", value: "2" },
+            { text: "Opción 3", value: "3" },
+            { text: "Opción 4", value: "4" }
+            ]; */
+
+        // Llamar a la función para agregar el componente header
         agregarCabecera('header', 'Administrador', 'Tino Reyna Villaverde');
+
+        const elementConfig = [
+            { element: 'select', type: 'manual'},
+            { element: 'select', type: ''},
+            { element: '', type: ''},
+            { element: 'input', type: 'text'},
+            { element: '', type: ''},
+            { element: '', type: ''}
+        ];
+
+        // Llamar a la función para agregar el componente filter-top
+        agregarFilterTop('filter-top', elementConfig);
+
+        // Inicializar el componente filter-top
+        const filterTop = new FilterTop('filter-top-template');
+
+        // Crear pares de elementos y añadirlos a las columnas
+        const pair1 = filterTop.createPair({ type: 'input', labelText: 'Nombre:', inputType: 'text', id: 'name-pair' });
+        const pair2 = filterTop.createPair({ type: 'input', labelText: 'Fecha:', inputType: 'date', id: 'date-pair' });
+        const pair3 = filterTop.createPair({ type: 'select', labelText: 'Opciones:', options: ['A', 'B', 'C'], id: 'select-pair' });
+        const pair4 = filterTop.createPair({ type: 'span', labelText: 'Texto:', id: 'span-pair' });
+        const pair5 = filterTop.createPair({ type: 'button', labelText: 'Enviar', id: 'button-pair' });
+
+        // Añadir los pares a las columnas
+        filterTop.addPairToColumn(pair1, 1);
+        filterTop.addPairToColumn(pair2, 1);
+        filterTop.addPairToColumn(pair3, 2);
+        filterTop.addPairToColumn(pair4, 2);
+        filterTop.addPairToColumn(pair5, 1);
+
+        // Llamar a la función para agregar el componente input-text
+        /* agregarInputText('input-text', 'datoLab', 'Ingresar dato:'); */
+        
+        // Llamar a la función para agregar el componente input-select
+        /* agregarInputSelect('input-select', 'searchLab', 'Tipo de búsqueda', 'searchSel', optionsSearch);
+        agregarInputSelect('input-select', 'facuLab', 'Facultad', 'facuSel', optionsFacultad); */
     </script>
 </body>
 </html>

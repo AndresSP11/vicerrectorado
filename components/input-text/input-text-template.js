@@ -1,7 +1,5 @@
-
-
-export function agregarCabecera(targetId, rol = 'sin definir', nombre = 'sin definir') {
-    // Cargar el template desde el archivo HTML externo
+export function agregarInputText(targetId, idLabel, labelText = 'sin definir') {
+    // Cargar el template del botón
     fetch('/components/input-text/input-text-template.html')
         .then(response => response.text())
         .then(data => {
@@ -11,17 +9,20 @@ export function agregarCabecera(targetId, rol = 'sin definir', nombre = 'sin def
             const template = div.querySelector('#input-text-template');
             const clone = template.content.cloneNode(true);
 
-            // Modificar el rol y nombre en el template clonado
-            /* const userRole = clone.querySelector('#user-role');
-            const userName = clone.querySelector('#user-name');
-            userRole.textContent = `Rol: ${rol}`;
-            userName.textContent = nombre; */
+            // Agregar id al elemento label
+            const label = document.querySelector(".label-cont");
+            console.log(label);
+            label.setAttribute('id', idLabel);
+
+            // Personalizar el texto del label
+            const labelElement = clone.querySelector(idLabel);
+            labelElement.textContent = labelText;
 
             // Insertar el contenido en el contenedor objetivo
             const target = document.getElementById(targetId);
             target.appendChild(clone);
         })
         .catch(error => {
-            console.error('Error al cargar el template:', error);
+            console.error('Error al cargar el template del botón:', error);
         });
 }
