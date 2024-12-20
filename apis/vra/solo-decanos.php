@@ -12,7 +12,7 @@ $db = conectarDB();
 } */
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+    
     $query='SELECT u.id_usuario, u.nombre 
     AS nombre_usuario, u.correo, r.nombre 
     AS nombre_rol, c.condicion 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $ejecuta= mysqli_query($db, $query);
 
-    $html="<tr><th>Codigo</th><th>Nombre</th><th>Rol</th><th>Contrato</th></tr>";
+    $html="<table/><tr><th>Codigo</th><th>Nombre</th><th>Rol</th><th>Contrato</th></tr>";
            
     while ($resultado = mysqli_fetch_assoc($ejecuta)) {
         $variable_1=$resultado['id_usuario'];
@@ -49,5 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </tr>
         ";
     }
+    $html.='</table>';
+
+    echo $html;
 }
 ?>
