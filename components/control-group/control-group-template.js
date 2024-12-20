@@ -1,12 +1,51 @@
-export function agregarFilterTop(targetId, elementConfigs) {
+const elementos = [
+    {
+        element: "label",
+        tag: "label",
+        type: "",
+        class: "label-control",
+    },
+    {
+        element: "input-text",
+        tag: "input",
+        type: "text",
+        class: "in-text-control",
+    },
+    {
+        element: "input-date",
+        tag: "input",
+        type: "date",
+        class: "in-date-control",
+    },
+    {
+        element: "select",
+        tag: "select",
+        type: "",
+        class: "select-control",
+    },
+    {
+        element: "span",
+        tag: "span",
+        type: "",
+        class: "span-control",
+    },
+    {
+        element: "button",
+        tag: "button",
+        type: "",
+        class: "button-control",
+    }
+];
+
+export function agregarControlGroup(targetId, elementConfigs) {
     // Cargar el template del botón
-    fetch('/components/filter-top/filter-top-template.html')
+    fetch('/components/control-group/control-group-template.html')
         .then(response => response.text())
         .then(data => {
             // Crear un nuevo div y agregar el contenido del template al DOM
             const div = document.createElement('div');
             div.innerHTML = data;
-            const template = div.querySelector('#filter-top-template');
+            const template = div.querySelector('#control-group-template');
             const clone = template.content.cloneNode(true);
 
             // Insertar el contenido en el contenedor objetivo

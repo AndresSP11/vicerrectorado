@@ -60,13 +60,6 @@
             { modal: false, type: ''},
             { modal: false, type: 'exit'}
         ];
-        
-        /* const buttonConfig = [
-            { visible: true, label: 'Manual de Usuario', action: () => alert('Descargando manual...') },
-            { visible: false, label: 'Nombre Boton', action: () => alert('Funcion...') },
-            { visible: false, label: 'Nombre Boton', action: () => alert('Funcion...') },
-            { visible: true, label: 'Salir', action: () => alert('Saliendo...') }
-        ]; */
 
         // Cargar el componente con la configuración
         agregarBotonInferior('buttons_lower', buttonConfig);
