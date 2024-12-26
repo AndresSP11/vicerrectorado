@@ -26,11 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     INNER JOIN categoria_contrato c 
     ON u.cat_cont_id = c.id_cat_cont 
     WHERE r.id_rol = 1;';
-
     $ejecuta= mysqli_query($db, $query);
-
-    $html="<table class='tabla'><tr><th>Codigo</th><th>Nombre</th><th>Rol</th><th>Contrato</th></tr>";
-           
+    $html="<table class='tabla'><thead><tr><th>Codigo</th><th>Nombre</th><th>Rol</th><th>Contrato</th></tr></thead>";
     while ($resultado = mysqli_fetch_assoc($ejecuta)) {
         $variable_1=$resultado['id_usuario'];
         $variable_2=$resultado['nombre_usuario'];
@@ -45,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </td>
                     <td>$variable_2</td>
                     <td class='cell-rol'>
-                                <span>Académico</span>
+                                <span>$variable_3</span>
                                 <img class='edit-button' src='/imagenes/change_rol.png' alt=''>
                             </td>
                     <td>$variable_4</td>   
@@ -53,7 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ";
     }
     $html.='</table>';
-
     echo json_encode($html);
 }
 ?>

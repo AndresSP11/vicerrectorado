@@ -6,6 +6,8 @@ const buttons = document.querySelectorAll('.edit-button');
 const cancelButton = document.querySelectorAll('.cancelButton');
 const acceptButton = document.querySelectorAll('.acceptButton');
 
+console.log(buttons);
+
 
 // Abrir modal actividad
 buttons.forEach(openButton => {

@@ -245,8 +245,9 @@
             </div>
         </section>
     </div>
-
-    <script src="/js/vra/02_gestion-cuentas.js"></script>
+    
     <script src="../../js/vra/decanos-show.js"></script>
+    <script src="/js/vra/02_gestion-cuentas.js"></script>
+    
 </body>
 </html>

@@ -1,33 +1,32 @@
 var seleccionador = document.querySelector("#seleccion_tipo"); /* check */
 var datoInput = document.querySelector("#dato_texto"); /* check */
 const tablero = document.querySelector("#tabla");
-
+const tablaContainer= document.querySelector("#tabla-container");
 
 document.addEventListener("DOMContentLoaded", porDefecto);
 function porDefecto() {
   mostrarTodosDecanos();
 }
 
-seleccionador.addEventListener("change", function () {
+seleccionador.addEventListener("change", function (e) {
+    console.log(e.target.value)
   if (seleccionador.value.trim() === "") {
     mostrarTodosDecanos();
   } else {
     /* AQUI POR NOMBRE DE MEDICAMENTO , EN ESET CASO LA RESPUESTA QUE SE VA OBENER SERÁ POR EL 
         HTML  */
-    if (seleccionador.value == "fichador") {
+    if (seleccionador.value == "nombre") {
       /* Llamador por nombre */
       tablero.innerHTML =
         "<tr><th>NÚMERO DE <br> RECETA</th><th>CÓDIGO <br> ALUMNO</th><th>PERÍODO <br> ACADEMICO</th><th>ESPECIALISTA <br> MÉDICO</th><th>ESPECIALIDAD</th><th>FECHA DE REGISTRO</th></tr>";
-
       datoInput.addEventListener("keyup", function () {
         tablero.innerHTML = "";
         soloConNombre(datoInput.value);
       });
     }
-    if (seleccionador.value == "codigo-alumno") {
+    if (seleccionador.value == "codigo") {
       tablero.innerHTML =
         "<tr><th>NÚMERO DE <br> RECETA</th><th>CÓDIGO <br> ALUMNO</th><th>PERÍODO <br> ACADEMICO</th><th>ESPECIALISTA <br> MÉDICO</th><th>ESPECIALIDAD</th><th>FECHA DE REGISTRO</th></tr>";
-
       datoInput.addEventListener("keyup", function () {
         tablero.innerHTML = "";
         codigoInterno(datoInput.value);
@@ -53,47 +52,7 @@ async function mostrarTodosDecanos() {
     const respuesta = await resultado.json();
     /* Respuesta de Data */
     tablaContainer.innerHTML=`${respuesta}`
-
-    /* const cabeza_1 = document.createElement("tr"); */
-    /* cabeza_1.innerHTML = `
-                            <tr>
-                                <th>NÚMERO DE <br> RECETA</th>
-                                <th>CÓDIGO <br> ALUMNO</th>
-                                <th>PERÍODO <br> ACADEMICO</th>
-                                <th>ESPECIALISTA <br> MÉDICO</th>
-                                <th>ESPECIALIDAD</th>
-                                <th>FECHA DE REGISTRO</th>
-                            </tr>`; */
     
-
-    respuesta.forEach((element) => {
-      var comida = "";
-      if (element.cantidad >= element.minimo_stock) {
-        comida = "stock-positivo";
-      }
-      if (element.minimo_stock == "") {
-        comida = "";
-      }
-      if (element.cantidad < element.minimo_stock) {
-        comida = "stock-negativo";
-      }
-      const cabeza = document.createElement("tr");
-      /* Aqui esta yendo los valores determinados... */
-      cabeza.innerHTML = `
-                <td>
-                <a href="../pages/receta-id.php?id_receta=${element.fichador_receta}" style="color:#195780">
-                ${element.fichador_receta}
-                </a>
-                </td>
-                <td>${element.codigo_alumno}</td>
-                <td>${element.periodo_academico}</td>
-                <td>${element.nombre_medico}</td>
-                <td>${element.especialidad_medico}</td>
-                <td>${element.fecha}</td>
-                
-                `;
-      tablero.appendChild(cabeza);
-    });
   } catch (error) {
     console.log(error);
   }
@@ -103,15 +62,15 @@ async function soloConNombre(valor) {
   const data = new FormData();
   data.append("post", valor);
   try {
-    const url = "../apis/solo-fichador.php";
+    const url = "../../apis/vra/mostrar-nombre.php";
 
     const resultado = await fetch(url, {
       method: "POST",
       body: data,
     });
-
+    /* Data se borra, recordar que con InnerHtml se borra */
     const respuesta = await resultado.json();
-    tablero.innerHTML = respuesta;
+    tablaContainer.innerHTML = respuesta;
   } catch (error) {
     console.log(error);
   }
