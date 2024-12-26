@@ -7,9 +7,13 @@ export function agregarControlInput(targetId, idLabel, labelText = 'sin definir'
             const template = div.querySelector('#control-input-template');
             const clone = template.content.cloneNode(true);
 
-            const uniqueSuffix = Date.now(); // Generar sufijo único
+            // Generar sufijo único
+            /* const uniqueSuffix = Date.now(); 
             const labelId = `${idLabel}-${uniqueSuffix}`;
-            const inputId = `${idInput}-${uniqueSuffix}`;
+            const selectId = `${idSelect}-${uniqueSuffix}`; */
+
+            const labelId = idLabel;
+            const inputId = idInput;
 
             // Personalizar el label dentro del clon
             const labelElement = clone.querySelector(".label-cont");
@@ -20,14 +24,6 @@ export function agregarControlInput(targetId, idLabel, labelText = 'sin definir'
             const inputElement = clone.querySelector(".input-cont");
             inputElement.setAttribute('id', inputId);
             inputElement.setAttribute('type', inputType);
-
-            /* // Botón para alternar entre 'text' y 'date'
-            const toggleButton = clone.querySelector(".toggle-btn");
-            toggleButton.addEventListener('click', () => {
-                const currentType = inputElement.getAttribute('type');
-                const newType = currentType === 'text' ? 'date' : 'text';
-                inputElement.setAttribute('type', newType);
-            }); */
 
             // Insertar el componente en el contenedor objetivo
             const target = document.getElementById(targetId);

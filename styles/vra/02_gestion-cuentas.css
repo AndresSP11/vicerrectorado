@@ -59,104 +59,17 @@ body{
 }
 
 .row {
-    width: 300px;
-}
-
-/* BUSCADOR Y TABLAS */
-
-.search{
     width: 100%;
-    /* border: black solid 2px; */
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
-.left{
-    align-content: flex-start;
-}
-
-.left .left_children{
-    margin-top: 20px;
-    width: 400px;
-    display: flex;
-}
-
-.left .left_children select{
-    background-color: white;
-    color: #333; /* Texto negro */
-    border: 1px solid #cd2f2f; /* Borde rojo */
-    font-family: "Oswald", sans-serif;
-    padding: 8px 12px;
-    border-radius: 0 5px 5px 0;
-    font-size: 1.9rem;
-    outline: none;
-    transition: ease-in-out all .3s;
-    width: 150px;
-}
-
-.left .left_children select:hover{
-    background-color:  #cd2f2f; 
-    color: #fff;
-}
-
-
-
-.left .right_children{
-    margin-top: 20px;
-    width: 400px;
+.right {
     display: flex;
     justify-content: flex-end;
 }
 
-.left .right_children input{
-    width: 150px;
-    border: 1px solid #cd2f2f;
-    border-radius: 0 5px 5px 0;
-    font-family: Arial, sans-serif;
-    font-size: 1.5rem;
-    padding: 5px;
-    outline: none;
-    width: 50%;
-}
+/* BUSCADOR Y TABLAS */
 
-.left .right_children input:hover{
-    border: 3px solid #cd2f2f;
-}
 
-.search-text{
-    background-color: #cd2f2f; /* Rojo intenso */
-    color: white; /* Texto blanco */
-    padding: 10px 15px;
-    border-radius: 5px 0 0 5px;
-    font-size: 1.9rem;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    margin-right: 5px; /* Separación del select */
-    width: 45%;
-}
-
-.right{
-    margin-top: 25px;
-}
-.right input{
-    background-color: white;
-    color: #333; /* Texto negro */
-    border: 1px solid #cd2f2f; /* Borde rojo */
-    padding: 8px 12px;
-    border-radius: 0 5px 5px 0;
-    font-size: 14px;
-    outline: none;
-    appearance: none; /* Elimina la flecha predeterminada */
-    font-family: "Oswald", sans-serif;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 20rem;
-}
-.right input:hover{
-    color: #333; /* Texto negro */
-    border: 3px solid #cd2f2f; /* Borde rojo */ 
-}
 
 
 

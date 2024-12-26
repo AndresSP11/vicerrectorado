@@ -7,9 +7,13 @@ export function agregarControlSelect(targetId, idLabel, labelText = 'sin definir
             const template = div.querySelector('#control-select-template');
             const clone = template.content.cloneNode(true);
 
-            const uniqueSuffix = Date.now(); // Generar sufijo único
+            // Generar sufijo único
+            /* const uniqueSuffix = Date.now(); 
             const labelId = `${idLabel}-${uniqueSuffix}`;
-            const selectId = `${idSelect}-${uniqueSuffix}`;
+            const selectId = `${idSelect}-${uniqueSuffix}`; */
+
+            const labelId = idLabel;
+            const selectId = idSelect;
 
             // Personalizar el label dentro del clon
             const labelElement = clone.querySelector(".label-cont");
