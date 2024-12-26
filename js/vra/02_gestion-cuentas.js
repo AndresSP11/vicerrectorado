@@ -6,16 +6,25 @@ const buttons = document.querySelectorAll('.edit-button');
 const cancelButton = document.querySelectorAll('.cancelButton');
 const acceptButton = document.querySelectorAll('.acceptButton');
 
-console.log(buttons);
+const container = document.getElementById('tabla-container');
 
+container.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target.classList.contains('edit-button')) {
+        // Interactuar con el elemento dinámico
+        /* alert('Hiciste clic en el botón de editar'); */
+        modalActividad.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    }
+});
 
 // Abrir modal actividad
-buttons.forEach(openButton => {
+/* buttons.forEach(openButton => {
     openButton.addEventListener('click', () => {
         modalActividad.classList.remove('hidden');
         overlay.classList.remove('hidden');
     });
-});
+}); */
 
 // Cerrar modal con los botones cancelar y aceptar
 cancelButton.forEach(closeButton => {

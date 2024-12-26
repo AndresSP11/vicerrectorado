@@ -153,7 +153,7 @@
                 <!-- Aqui vamos agregar la tabla -->
 
                 <table class="tabla" id="tabla">
-                    <thead>
+                    <!-- <thead>
                         <tr>
                             
                             <th>CÓDIGO</th>
@@ -162,9 +162,9 @@
                             <th>CONTRATO</th>
                             
                         </tr>
-                    </thead>
+                    </thead> -->
                     <tbody>
-                        <tr>
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -172,9 +172,9 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
+                        </tr> -->
                         <!-- Agrega más filas aquí según sea necesario -->
-                        <tr>
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -182,8 +182,8 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -191,8 +191,8 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -200,8 +200,8 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -209,8 +209,8 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -218,8 +218,8 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -227,8 +227,8 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
-                        <tr>
+                        </tr> -->
+                        <!-- <tr>
                             <td>2022107E</td>
                             <td>James Torres</td>
                             <td class="cell-rol">
@@ -236,7 +236,7 @@
                                 <img class="edit-button" src="/imagenes/change_rol.png" alt="">
                             </td>
                             <td>Tipo A</td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -246,7 +246,7 @@
         </section>
     </div>
     
-    <script src="../../js/vra/decanos-show.js"></script>
+    <script src="/js/vra/decanos-show.js"></script>
     <script src="/js/vra/02_gestion-cuentas.js"></script>
     
 </body>
