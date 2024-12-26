@@ -2,7 +2,7 @@
     width: 100%;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    gap: 5%;
 }
 
 .modal {
@@ -18,10 +18,10 @@
     font-size: 1.8rem;
     font-family: "Oswald", sans-serif;
     width: 45%;
+    max-width: 180px;
 }
 
 .select-cont{
-    width: 150px;
     border: 2px solid #cd2f2f;
     border-radius: 0 5px 5px 0;
     font-family: "Oswald", sans-serif;
@@ -29,6 +29,9 @@
     padding: 5px;
     outline: none;
     width: 50%;
+    max-width: 150px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .select-cont:hover{

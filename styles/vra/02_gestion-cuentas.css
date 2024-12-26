@@ -75,10 +75,19 @@ body{
 
 .control-group {
     width: 100%;
-    /* border: black solid 2px; */
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.row {
+    display: flex;
 }
 
 /* BUSCADOR Y TABLAS */
