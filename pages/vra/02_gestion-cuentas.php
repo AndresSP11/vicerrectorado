@@ -123,7 +123,7 @@
                             <option value="nombre">Nombre</option>
                         </select>
                     </div>
-                    <div class="left_children">
+                    <!-- <div class="left_children">
                         <label for="search-type" class="search-text">Facultad:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
@@ -138,7 +138,7 @@
                             <option value="">FIP</option>
                             <option value="">FC</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
                 
                 <div class="left">
