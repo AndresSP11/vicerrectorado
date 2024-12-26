@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $ejecuta= mysqli_query($db, $query);
 
-    $html="<table/><tr><th>Codigo</th><th>Nombre</th><th>Rol</th><th>Contrato</th></tr>";
+    $html="<table class='tabla'><tr><th>Codigo</th><th>Nombre</th><th>Rol</th><th>Contrato</th></tr>";
            
     while ($resultado = mysqli_fetch_assoc($ejecuta)) {
         $variable_1=$resultado['id_usuario'];
@@ -39,18 +39,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $html.="
                 <tr>
                     <td>
-                    <a href='../pages/receta-id.php?id_receta=$variable_1' style='color:#195780'>
+                    <a href='' style='color:#195780'>
                     $variable_1
                     </a>
                     </td>
                     <td>$variable_2</td>
-                    <td>$variable_3</td>
+                    <td class='cell-rol'>
+                                <span>Académico</span>
+                                <img class='edit-button' src='/imagenes/change_rol.png' alt=''>
+                            </td>
                     <td>$variable_4</td>   
                 </tr>
         ";
     }
     $html.='</table>';
 
-    echo $html;
+    echo json_encode($html);
 }
 ?>

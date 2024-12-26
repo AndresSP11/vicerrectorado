@@ -149,7 +149,9 @@
                 </div>
             </div>
 
-            <div class="tabla-container">
+            <div class="tabla-container" id="tabla-container">
+                <!-- Aqui vamos agregar la tabla -->
+
                 <table class="tabla" id="tabla">
                     <thead>
                         <tr>
@@ -245,5 +247,6 @@
     </div>
 
     <script src="/js/vra/02_gestion-cuentas.js"></script>
+    <script src="../../js/vra/decanos-show.js"></script>
 </body>
 </html>
