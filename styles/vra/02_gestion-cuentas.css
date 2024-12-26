@@ -71,6 +71,16 @@ body{
     font-family: "Oswald", sans-serif;
 }
 
+/* GRUPO DE CONTROL: INPUTS, SELECTS, ETC */
+
+.control-group {
+    width: 100%;
+    /* border: black solid 2px; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 /* BUSCADOR Y TABLAS */
 
 .search{
@@ -166,6 +176,9 @@ body{
     color: #333; /* Texto negro */
     border: 3px solid #cd2f2f; /* Borde rojo */ 
 }
+
+
+
 
 .cell-rol {
     text-align: left;

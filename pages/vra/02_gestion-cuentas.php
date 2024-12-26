@@ -94,7 +94,18 @@
                 <p>Gestion de Cuentas</p>
             </div>
 
-            <div class="filter-top"></div>
+            <div id="control_group" class="control-group">
+                <div class="column" id="c1">
+                    <div class="row" id="r11"></div>
+                    <div class="row" id="r12"></div>
+                    <div class="row" id="r13"></div>
+                </div>
+                <div class="column" id="c2">
+                    <div class="row" id="r21">Fila 1, Columna 2</div>
+                    <div class="row" id="r22">Fila 2, Columna 2</div>
+                    <div class="row" id="r23">Fila 3, Columna 2</div>
+                </div>
+            </div>
 
             <!-- <div class="search">
                 <div class="left">
@@ -233,61 +244,35 @@
         import { agregarCabecera } from '/components/header/header-template.js';
         import { agregarInputText } from '/components/input-text/input-text-template.js';
         import { agregarInputSelect } from '/components/input-select/input-select-template.js';
-        import { agregarFilterTop } from '/components/filter-top/filter-top-template.js';
-        import { FilterTop } from '/components/filter-top/filter-top-template.js';
-
-        /* const optionsSearch = [
-            { text: "Opción 1", value: "1" },
-            { text: "Opción 2", value: "2" },
-            { text: "Opción 3", value: "3" },
-            { text: "Opción 4", value: "4" }
-            ];
-
-        const optionsFacultad = [
-            { text: "Opción 1", value: "1" },
-            { text: "Opción 2", value: "2" },
-            { text: "Opción 3", value: "3" },
-            { text: "Opción 4", value: "4" }
-            ]; */
 
         // Llamar a la función para agregar el componente header
         agregarCabecera('header', 'Administrador', 'Tino Reyna Villaverde');
 
-        const elementConfig = [
-            { element: 'select', type: 'manual'},
-            { element: 'select', type: ''},
-            { element: '', type: ''},
-            { element: 'input', type: 'text'},
-            { element: '', type: ''},
-            { element: '', type: ''}
-        ];
+        const optionsSearch = [
+            { text: "Código", value: "código" },
+            { text: "Nombre", value: "nombre" },
+            ];
 
-        // Llamar a la función para agregar el componente filter-top
-        agregarFilterTop('filter-top', elementConfig);
+        const optionsFacultad = [
+            { text: "FIIS", value: "FIIS" },
+            { text: "FIC", value: "FIC" },
+            { text: "FAUA", value: "FAUA" },
+            { text: "FIQT", value: "FIQT" },
+            { text: "FIM", value: "FIM" },
+            { text: "FIGMM", value: "FIGMM" },
+            { text: "FEC", value: "FEC" },
+            { text: "FEROP", value: "FEROP" },
+            { text: "FIP", value: "FIP" },
+            { text: "FC", value: "FC" }
+            ];
 
-        // Inicializar el componente filter-top
-        const filterTop = new FilterTop('filter-top-template');
-
-        // Crear pares de elementos y añadirlos a las columnas
-        const pair1 = filterTop.createPair({ type: 'input', labelText: 'Nombre:', inputType: 'text', id: 'name-pair' });
-        const pair2 = filterTop.createPair({ type: 'input', labelText: 'Fecha:', inputType: 'date', id: 'date-pair' });
-        const pair3 = filterTop.createPair({ type: 'select', labelText: 'Opciones:', options: ['A', 'B', 'C'], id: 'select-pair' });
-        const pair4 = filterTop.createPair({ type: 'span', labelText: 'Texto:', id: 'span-pair' });
-        const pair5 = filterTop.createPair({ type: 'button', labelText: 'Enviar', id: 'button-pair' });
-
-        // Añadir los pares a las columnas
-        filterTop.addPairToColumn(pair1, 1);
-        filterTop.addPairToColumn(pair2, 1);
-        filterTop.addPairToColumn(pair3, 2);
-        filterTop.addPairToColumn(pair4, 2);
-        filterTop.addPairToColumn(pair5, 1);
 
         // Llamar a la función para agregar el componente input-text
         /* agregarInputText('input-text', 'datoLab', 'Ingresar dato:'); */
         
         // Llamar a la función para agregar el componente input-select
-        /* agregarInputSelect('input-select', 'searchLab', 'Tipo de búsqueda', 'searchSel', optionsSearch);
-        agregarInputSelect('input-select', 'facuLab', 'Facultad', 'facuSel', optionsFacultad); */
+        agregarInputSelect('r11', 'searchLab', 'Tipo de búsqueda', 'searchSel', optionsSearch);
+        agregarInputSelect('r12', 'facuLab', 'Facultad', 'facuSel', optionsFacultad);
     </script>
 </body>
 </html>
