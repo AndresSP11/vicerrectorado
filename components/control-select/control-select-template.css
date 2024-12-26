@@ -1,8 +1,8 @@
-.input-text{
+.control-select{
     width: 100%;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    gap: 5%;
 }
 
 .modal {
@@ -17,21 +17,23 @@
     border-radius: 5px 0 0 5px;
     font-size: 1.8rem;
     font-family: "Oswald", sans-serif;
-    width: 45%;
+    width: 50%;
+    min-width: 140px;
 }
 
-.input-cont{
-    width: 150px;
+.select-cont{
     border: 2px solid #cd2f2f;
     border-radius: 0 5px 5px 0;
     font-family: "Oswald", sans-serif;
     font-size: 1.8rem;
     padding: 5px;
     outline: none;
-    width: 50%;
+    width: 45%;
+    min-width: 120px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-.input-cont:hover{
+.select-cont:hover{
     border: 3px solid #cd2f2f;
 }
-

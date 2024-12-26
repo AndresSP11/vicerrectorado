@@ -10,39 +10,10 @@ body{
     height: 100%;
 }
 
-.fondo{
-    position: relative;
-    height: 100vh;
-    background: url('/imagenes/reunionimg.png');
-    /* border: 2px solid rgb(255, 204, 0); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 55% bottom 35%;
-}
-
 .contenedor{
-    
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.cont-user{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    margin-left: 50px;
-    color: #fff;
-    border-radius: 20px ;
-}
-.log-user{
-    margin-top: 8px;
-    font-size: 3.2rem;
-}
-.user-data{
-    font-size: 3.2rem;
-    font-family: "Oswald", sans-serif;
-
 }
 
 /* CUERPO DEL CONTENEDOR  */
@@ -83,11 +54,12 @@ body{
 .column {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .row {
-    display: flex;
+    width: 300px;
 }
 
 /* BUSCADOR Y TABLAS */

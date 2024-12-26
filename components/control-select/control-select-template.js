@@ -1,10 +1,10 @@
-export function agregarInputSelect(targetId, idLabel, labelText = 'sin definir', idSelect, options = []) {
-    fetch('/components/input-select/input-select-template.html')
+export function agregarControlSelect(targetId, idLabel, labelText = 'sin definir', idSelect, options = []) {
+    fetch('/components/control-select/control-select-template.html')
         .then(response => response.text())
         .then(data => {
             const div = document.createElement('div');
             div.innerHTML = data;
-            const template = div.querySelector('#input-select-template');
+            const template = div.querySelector('#control-select-template');
             const clone = template.content.cloneNode(true);
 
             const uniqueSuffix = Date.now(); // Generar sufijo único

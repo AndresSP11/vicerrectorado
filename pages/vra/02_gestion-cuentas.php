@@ -9,8 +9,8 @@
     <title>Gestión de Cuentas</title>
     <link rel="stylesheet" href="/styles/vra/02_gestion-cuentas.css">
     <link rel="stylesheet" href="/components/header/header-template.css"> <!-- componente header -->
-    <link rel="stylesheet" href="/components/input-text/input-text-template.css"> <!-- componente input-text -->
-    <link rel="stylesheet" href="/components/input-select/input-select-template.css"> <!-- componente input-select -->
+    <link rel="stylesheet" href="/components/control-input/control-input-template.css"> <!-- componente input-text -->
+    <link rel="stylesheet" href="/components/control-select/control-select-template.css"> <!-- componente input-select -->
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,9 +101,9 @@
                     <div class="row" id="r13"></div>
                 </div>
                 <div class="column" id="c2">
-                    <div class="row" id="r21">Fila 1, Columna 2</div>
-                    <div class="row" id="r22">Fila 2, Columna 2</div>
-                    <div class="row" id="r23">Fila 3, Columna 2</div>
+                    <div class="row" id="r21"></div>
+                    <div class="row" id="r22"></div>
+                    <div class="row" id="r23"></div>
                 </div>
             </div>
 
@@ -242,8 +242,8 @@
     <!-- Script que llama a los componentes -->
     <script type="module">
         import { agregarCabecera } from '/components/header/header-template.js';
-        import { agregarInputText } from '/components/input-text/input-text-template.js';
-        import { agregarInputSelect } from '/components/input-select/input-select-template.js';
+        import { agregarControlInput } from '/components/control-input/control-input-template.js';
+        import { agregarControlSelect } from '/components/control-select/control-select-template.js';
 
         // Llamar a la función para agregar el componente header
         agregarCabecera('header', 'Administrador', 'Tino Reyna Villaverde');
@@ -265,14 +265,13 @@
             { text: "FIP", value: "FIP" },
             { text: "FC", value: "FC" }
             ];
-
-
-        // Llamar a la función para agregar el componente input-text
-        /* agregarInputText('input-text', 'datoLab', 'Ingresar dato:'); */
         
         // Llamar a la función para agregar el componente input-select
-        agregarInputSelect('r11', 'searchLab', 'Tipo de búsqueda', 'searchSel', optionsSearch);
-        agregarInputSelect('r12', 'facuLab', 'Facultad', 'facuSel', optionsFacultad);
+        agregarControlSelect('r11', 'searchLab', 'Tipo de búsqueda', 'searchSel', optionsSearch);
+        agregarControlSelect('r12', 'facuLab', 'Facultad', 'facuSel', optionsFacultad);
+
+        // Llamar a la función para agregar el componente input-text
+        agregarControlInput('r21', 'datoLab', 'Ingresar dato:', 'datoText', 'text');
     </script>
 </body>
 </html>
