@@ -50,7 +50,7 @@
             <h1 class="user-welcome">Bienvenido, Ronny Hancco Lopez</h1>
             <div>
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Horarios</div>
+                    <a class="button-sup_red" href="./02_gestion-horario.php">Gestión de Horarios</a>
                     <div class="button-inf_white"></div>
                 </div>
                 

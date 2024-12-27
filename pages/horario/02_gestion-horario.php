@@ -66,13 +66,18 @@
                     </div>
                     <input type="submit" class="submit-var" value="Registro personalizado de horario">
                 </form>
+
+                <div class="button_n">
+                    <a class="button-sup_red" href="./03_registro-personalizado.php">Registro Personalizado de Horario</a>
+                    <div class="button-inf_white"></div>
+                </div>
                 
             </div>
 
             <div class="buttons-doc">
                 
                 <div class="salida">
-                    <a href="">Salir</a>
+                    <a href="./01_menu-horario.php">Salir</a>
                 </div>
             </div>
 
