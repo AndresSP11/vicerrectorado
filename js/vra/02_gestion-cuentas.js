@@ -2,17 +2,17 @@
 const modal = document.querySelector('.modal');
 const modalActividad = document.querySelector('#modal_usuario');
 const overlay = document.getElementById('overlay'); 
-const buttons = document.querySelectorAll('.edit-button');
+/* const buttons = document.querySelectorAll('.edit-button'); */
 const cancelButton = document.querySelectorAll('.cancelButton');
 const acceptButton = document.querySelectorAll('.acceptButton');
 
 const container = document.getElementById('tabla-container');
 
-container.addEventListener('click', (event) => {
+// Abrir modal actividad
+container.addEventListener('click', (event) => { /* Delegacion de eventos */
     const target = event.target;
     if (target.classList.contains('edit-button')) {
         // Interactuar con el elemento dinámico
-        /* alert('Hiciste clic en el botón de editar'); */
         modalActividad.classList.remove('hidden');
         overlay.classList.remove('hidden');
     }
