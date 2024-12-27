@@ -149,7 +149,7 @@
                 </table>
             </div>
             <div class="salida">
-                    <a href="">Regresar</a>
+                <a href="./01_menu-decano.php">Regresar</a>
             </div>
         </section>
 

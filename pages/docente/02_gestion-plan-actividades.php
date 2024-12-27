@@ -129,7 +129,7 @@
                 </table>
             </div>
             <div class="salida">
-                <a href="">Regresar</a>
+                <a href="./01_menu-docente.php">Regresar</a>
                 <a href="">Registrar</a>
             </div>
         </section>

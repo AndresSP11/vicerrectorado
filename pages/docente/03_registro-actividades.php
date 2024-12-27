@@ -197,7 +197,7 @@
                 </table>
             </div>
             <div class="salida">
-                <a href="">Regresar</a>
+                <a href="./01_menu-docente.php">Regresar</a>
                 <button href="" id="agregarButton">Agregar</button>
             </div>
         </section>

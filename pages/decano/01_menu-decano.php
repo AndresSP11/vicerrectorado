@@ -47,17 +47,17 @@
             <h1 class="user-welcome">Bienvenido(a), Mery Morales Cuellar</h1>
             <div>
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Cuentas</div>
+                    <a class="button-sup_red" href="./02_gestion-cuentas.php">Gestión de Cuentas</a>
                     <div class="button-inf_white"></div>
                 </div>
                 
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Actividades del Docente</div>
+                    <a class="button-sup_red" href="./03_gestion-actividades-doc.php">Gestión de Actividades del Docente</a>
                     <div class="button-inf_white"></div>
                 </div>
 
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Carga Horaria</div>
+                    <a class="button-sup_red" href="./02_gestion-cuentas.php">Gestión de Carga Horaria</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>

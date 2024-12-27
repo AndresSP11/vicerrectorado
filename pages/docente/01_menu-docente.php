@@ -47,7 +47,7 @@
             <h1 class="user-welcome">Bienvenido, Jorge Canchano Minaya</h1>
             <div>
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Propuesta de Actividades</div>
+                    <a class="button-sup_red" href="./02_gestion-plan-actividades.php" >Gestión de Propuesta de Actividades</a>
                     <div class="button-inf_white left_children">
                         <label for="search-type" class="search-text">Período:</label>
                         <select id="seleccion_tipo" name="search-type">
@@ -59,7 +59,7 @@
                 </div>
                 
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Actividades Realizadas</div>
+                    <a class="button-sup_red" href="./03_registro-actividades.php">Gestión de Actividades Realizadas</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>
