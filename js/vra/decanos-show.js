@@ -76,38 +76,23 @@ async function soloConNombre(valor) {
   }
 }
 
-async function mostrarConCodigoSiga() {
-  const data = new FormData();
-  data.append("post", valor);
-  try {
-    const url = "../apis/solo-nombre.php";
-    const resultado = await fetch(url, {
-      method: "POST",
-      body: data,
-    });
 
-    const respuesta = await resultado.json();
-    tablero.innerHTML = respuesta;
-  } catch (error) {
-    console.log(error);
-  }
-}
 
 async function codigoInterno(valor) {
-  const data = new FormData();
-  data.append("post", valor);
-  try {
-    const url = "../apis/solo-codigo-receta.php";
-    const resultado = await fetch(url, {
-      method: "POST",
-      body: data,
-    });
-
-    const respuesta = await resultado.json();
-    tablero.innerHTML = respuesta;
-  } catch (error) {
-    console.log(error);
-  }
+    const data = new FormData();
+    data.append("post", valor);
+    try {
+      const url = "../../apis/vra/mostrar-codigo.php";
+      const resultado = await fetch(url, {
+        method: "POST",
+        body: data,
+      });
+  
+      const respuesta = await resultado.json();
+      tablaContainer.innerHTML = respuesta;
+    } catch (error) {
+      console.log(error);
+    }
 }
 
 
