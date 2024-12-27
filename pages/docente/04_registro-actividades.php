@@ -97,7 +97,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Registro de Actividades no Lectivas</p>   
+              <p>Registro de Actividades Realizadas</p>   
             </div>
 
             <div class="search">

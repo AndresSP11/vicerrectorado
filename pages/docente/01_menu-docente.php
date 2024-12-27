@@ -48,18 +48,11 @@
             <div>
                 <div class="button_n">
                     <a class="button-sup_red" href="./02_gestion-plan-actividades.php" >Gestión de Propuesta de Actividades</a>
-                    <div class="button-inf_white left_children">
-                        <label for="search-type" class="search-text">Período:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="24-1">24-1</option>
-                            <option value="24-2">24-2</option>
-                        </select>
-                    </div>
+                    <div class="button-inf_white"></div>
                 </div>
                 
                 <div class="button_n">
-                    <a class="button-sup_red" href="./03_registro-actividades.php">Gestión de Actividades Realizadas</a>
+                    <a class="button-sup_red" href="./04_registro-actividades.php">Gestión de Actividades Realizadas</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>

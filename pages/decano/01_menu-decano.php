@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="button_n">
-                    <a class="button-sup_red" href="./02_gestion-cuentas.php">Gestión de Carga Horaria</a>
+                    <a class="button-sup_red" href="./04_gestion-carga-horaria.php">Gestión de Carga Horaria</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>
