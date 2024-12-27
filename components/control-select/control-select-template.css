@@ -5,12 +5,12 @@
     gap: 5px;
 }
 
-.modal {
+.modal-select {
     font-size: 1.5rem;
     min-height: 3.5rem;
 }
 
-.label-cont{
+.label-select{
     background-color: #cd2f2f; /* Rojo intenso */
     color: white; /* Texto blanco */
     padding: 8px 12px;
@@ -21,7 +21,7 @@
     min-width: 140px;
 }
 
-.select-cont{
+.select-comp{
     border: 2px solid #cd2f2f;
     border-radius: 0 5px 5px 0;
     font-family: "Oswald", sans-serif;
@@ -34,6 +34,6 @@
     -moz-appearance: none;
 }
 
-.select-cont:hover{
+.select-comp:hover{
     border: 3px solid #cd2f2f;
 }

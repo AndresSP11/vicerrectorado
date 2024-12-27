@@ -16,12 +16,12 @@ export function agregarControlSelect(targetId, idLabel, labelText = 'sin definir
             const selectId = idSelect;
 
             // Personalizar el label dentro del clon
-            const labelElement = clone.querySelector(".label-cont");
+            const labelElement = clone.querySelector(".label-select");
             labelElement.setAttribute('id', labelId);
             labelElement.textContent = labelText;
 
             // Personalizar el select dentro del clon
-            const selectElement = clone.querySelector(".select-cont");
+            const selectElement = clone.querySelector(".select-comp");
             selectElement.setAttribute('id', selectId);
 
             // Añadir opciones al select
