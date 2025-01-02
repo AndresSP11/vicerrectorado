@@ -50,8 +50,8 @@
         actualizarBienvenida('Tino Reyna Villaverde');
 
         // Llamar a la función para agregar botones con textos personalizados
-        agregarBotonMenu('buttons_menu', 'Gestión de Cuentas');
-        agregarBotonMenu('buttons_menu', 'Gestión de Actividades del Docente');
+        agregarBotonMenu('buttons_menu', 'Gestión de Cuentas', './02_gestion-cuentas.php');
+        agregarBotonMenu('buttons_menu', 'Gestión de Actividades del Docente', './03_gestion-actividades-doc.php');
 
         // Configuración para los botones inferiores
         const buttonConfig = [

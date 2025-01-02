@@ -153,6 +153,7 @@ body{
     background-color: #b71c1c; /* Rojo más oscuro al pasar el cursor */
 }
 
+
 .salida a{
     margin-top: 30px;
     background-color: blue;
@@ -165,8 +166,202 @@ body{
     text-decoration: none;
 }
 
+
 .salida a:hover{
     background-color: rgb(31, 1, 150);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+    z-index: 1;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 65%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    text-align: center;
+    border: 2px solid #b71c1c; /* Borde rojo */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.9rem;
+    color: black;
+}
+
+/* Ocultar elementos por defecto */
+.hidden {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-direction: column; /* Asegura que los form-groups estén en columnas */
+    gap: 20px; /* Espacio entre los grupos de label e input */
+    width: 50%;
+}
+
+.section select{
+    background-color: white;
+    color: #333; /* Texto negro */
+    border: 1px solid #cd2f2f; /* Borde rojo */
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.9rem;
+    outline: none;
+    transition: ease-in-out all .3s;
+    width: 150px;
+}
+
+.section select:hover{
+    background-color:  #cd2f2f; 
+    color: #fff;
+}
+
+.section option {
+    font-size: 1.5rem;
+}
+
+.sub-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el label y el input */
+    gap: 10px; /* Espacio entre el label y el input */
+}
+
+.sub-section label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: end;
+    font-family: Arial, sans-serif;
+    width: 40%;
+}
+
+.sub-section input {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    width: 50%;
+    border: 2px solid #b71c1c;
+    border-radius: 5px;
+    padding: 5px 2px;
+}
+
+.sub-section span {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    width: 50%;
+    border: 2px solid #b71c1c;
+    border-radius: 5px;
+    padding: 5px 2px;
+}
+
+.sub-section select{
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    width: 50%;
+    border: 2px solid #b71c1c;
+    border-radius: 5px;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-end;
+}
+
+span.title {
+    font-weight: bold;
+    border-radius: 0px;
+    background-color: #b71c1c;
+    color: #fff;
+    width: 70%;
+    margin-right: 6%;
+}
+
+div.cell {
+    width: 50%;
+    border: 2px solid #b71c1c;
+    border-radius: 5px;
+    padding: 5px 2px;
+    border-top: none;
+    border-radius: 0px;
+    width: 70%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.cell span {
+    border: 0px;
+    padding: 0px;
+    padding-left: 20%;
+}
+
+div.cell img {
+    height: 20px;
+    object-fit: contain;
+    padding-right: 20%;
+    cursor: pointer;
+}
+
+.close_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cancelButton {
+    background-color: #b71c1c;
+    padding: 6px 40px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.acceptButton {
+    background-color: #232ddfc8;
+    padding: 6px 40px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .overlay {

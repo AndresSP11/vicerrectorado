@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Carga Horaria</title>
-    <link rel="stylesheet" href="/styles/supervision/04_gestion-carga-horaria.css">
+    <link rel="stylesheet" href="/styles/decano/04_gestion-carga-horaria.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +35,8 @@
                 <div class="left-barraV_father"></div>
                 <div class="cont-user">
                     <div class="user-data">
-                        <p>Rol: Supervisor</p>
-                        <p>Tino Reyna Villaverde</p>
+                        <p>Rol: Decano</p>
+                        <p>Mery Morales Cuellar</p>
                     </div>
                     <div>
                         <i class='bx bxs-user log-user'></i> 
@@ -153,11 +153,11 @@
                 </table>
             </div>
             <div class="salida">
-                <a href="./01_menu-supervision.php">Regresar</a>
+                <a href="./01_menu-decano.php">Regresar</a>
             </div>
         </section>
 
     </div>
-    <script src="/js/vra/gestion-actividades-doc.js"></script>
+    <script src="/js/decano/gestion-actividades-doc.js"></script>
 </body>
 </html>

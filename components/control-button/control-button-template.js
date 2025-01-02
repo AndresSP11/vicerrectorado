@@ -1,10 +1,10 @@
-export function agregarControlInput(targetId, idLabel, labelText = 'sin definir', idInput, inputType = 'text') {
-    fetch('/components/control-input/control-input-template.html')
+export function agregarControlButton(targetId, idLabel, labelText = 'sin definir', idInput, inputType = 'text') {
+    fetch('/components/control-button/control-button-template.html')
         .then(response => response.text())
         .then(data => {
             const div = document.createElement('div');
             div.innerHTML = data;
-            const template = div.querySelector('#control-input-template');
+            const template = div.querySelector('#control-button-template');
             const clone = template.content.cloneNode(true);
 
             // Generar sufijo único

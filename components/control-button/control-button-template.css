@@ -1,17 +1,17 @@
-.control-span{
+.control-button{
     width: 400px;
     margin-top: 20px;
     display: flex;
     gap: 5px;
 }
 
-.modal-span {
+.modal-button {
     font-size: 1.5rem;
     min-height: 3.5rem;
 }
 
-.label-span{
-    background-color: #cd2f2f; /* Rojo intenso */
+.button-unique{
+    background-color: #3932C2; /* Rojo intenso */
     color: white; /* Texto blanco */
     padding: 8px 12px;
     border-radius: 5px 0 0 5px;
@@ -19,28 +19,6 @@
     font-family: "Oswald", sans-serif;
     width: 50%;
     max-width: 150px;
-}
-
-.span-prin{
-    border: 2px solid #cd2f2f;
-    border-radius: 0 5px 5px 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 1.8rem;
-    padding: 5px;
-    outline: none;
-    /* width: 45%; */
-    width: 250px;
-}
-
-.span-sec{
-    border: 2px solid #cd2f2f;
-    border-radius: 0 5px 5px 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 1.8rem;
-    padding: 5px;
-    outline: none;
-    /* width: 45%; */
-    width: 250px;
 }
 
 .hidden {

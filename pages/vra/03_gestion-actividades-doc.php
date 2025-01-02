@@ -1,4 +1,21 @@
 <?php 
+    /* Esta parte de la gestion de actividades */
+    /* Se va obtener el id */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -207,7 +224,7 @@
                 </table>
             </div>
             <div class="salida">
-                    <a href="">Regresar</a>
+                    <a href="./01_menu-vra.php">Regresar</a>
             </div>
         </section>
 
@@ -221,4 +238,4 @@
         agregarCabecera('header', 'Administrador', 'Tino Reyna Villaverde');
     </script>
 </body>
-</html>
+</html> 

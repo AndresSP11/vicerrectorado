@@ -21,7 +21,7 @@
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
-            <img src="../../imagenes/logouni.png" alt="">
+            <img src="/imagenes/logouni.png" alt="">
             <div class="cabezal">
                 <p class="title-vra">VRA UNI</p>
                 <div class="barraV_father">
@@ -106,7 +106,7 @@
                             <td class="cell-view">
                                 <span>10</span>
                                 <img src="/imagenes/vista.png" alt="">
-                            </td> 
+                            </td>
                         </tr>
                         <!-- Agrega más filas aquí según sea necesario -->
                         <tr>

@@ -1,4 +1,4 @@
-export function agregarBotonMenu(targetId, textoSuperior = 'sin definir') {
+export function agregarBotonMenu(targetId, textoSuperior = 'sin definir', ruta) {
     // Cargar el template del botón
     fetch('/components/button-menu/button-menu-template.html')
         .then(response => response.text())
@@ -12,6 +12,7 @@ export function agregarBotonMenu(targetId, textoSuperior = 'sin definir') {
             // Personalizar el texto del botón superior
             const buttonSupRed = clone.querySelector('.button-sup_red');
             buttonSupRed.textContent = textoSuperior;
+            buttonSupRed.href = ruta;
 
             // Insertar el contenido en el contenedor objetivo
             const target = document.getElementById(targetId);
