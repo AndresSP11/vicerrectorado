@@ -62,7 +62,7 @@
                     <button>Descargar Manual de Usuario</button>
                 </div>
                 <div class="salida">
-                    <a href="">Salir</a>
+                    <a href="./01_menu-horario.php">Salir</a>
                 </div>
             </div>
 

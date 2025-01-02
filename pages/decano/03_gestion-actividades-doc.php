@@ -57,8 +57,8 @@
                 <div class="left-barraV_father"></div>
                 <div class="cont-user">
                     <div class="user-data">
-                        <p>Rol: Administrador</p>
-                        <p>Tino Reyna Villaverde</p>
+                        <p>Rol: Decano</p>
+                        <p>Mery Morales Cuellar</p>
                     </div>
                     <div>
                         <i class='bx bxs-user log-user'></i> 
@@ -228,7 +228,7 @@
                 </table>
             </div>
             <div class="salida">
-                    <a href="">Regresar</a>
+                <a href="./01_menu-decano.php">Regresar</a>
             </div>
         </section>
 

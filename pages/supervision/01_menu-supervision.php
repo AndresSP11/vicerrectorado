@@ -48,12 +48,12 @@
             <h1 class="user-welcome">Bienvenido, Tino Reyna Villaverde</h1>
             <div>
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Evluaciones</div>
+                    <a class="button-sup_red" href="./02_gestion-evaluaciones.php">Gestión de Evluaciones</a>
                     <div class="button-inf_white"></div>
                 </div>
                 
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Carga Horaria</div>
+                    <a class="button-sup_red" href="./04_gestion-carga-horaria.php">Gestión de Carga Horaria</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>

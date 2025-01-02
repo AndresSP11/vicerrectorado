@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Carga Horaria</title>
-    <link rel="stylesheet" href="/styles/supervision/04_gestion-carga-horaria.css">
+    <title>Gestión de Plan de Actividades</title>
+    <link rel="stylesheet" href="/styles/docente/02_gestion-plan-actividades.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <div class='container-cuerpo'>
         <header>
             <!-- Imagenes. -->
-            <img src="../../imagenes/logouni.png" alt="">
+            <img src="/imagenes/logouni.png" alt="">
             <div class="cabezal">
                 <p class="title-vra">VRA UNI</p>
                 <div class="barraV_father">
@@ -35,50 +35,49 @@
                 <div class="left-barraV_father"></div>
                 <div class="cont-user">
                     <div class="user-data">
-                        <p>Rol: Supervisor</p>
-                        <p>Tino Reyna Villaverde</p>
+                        <p>Rol: Docente</p>
+                        <p>Jorge Canchano Minaya</p>
                     </div>
                     <div>
-                        <i class='bx bxs-user log-user'></i> 
+                        <i class='bx bxs-user log-user'></i>
                     </div>
                 </div>
-            </div> 
+            </div>
         </header>
 
         <section class="container">
             <div class="title-cont">
-              <p>Gestión de Carga Horaria</p>   
+              <p>Registro de Actividades no Lectivas</p>   
             </div>
 
             <div class="search">
                 <div class="left">
                     <div class="left_children">
-                        <label for="search-type" class="search-text">Período:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="24-1">24-1</option>
-                            <option value="24-2">24-2</option>
-                        </select>
+                        <label for="search-type" class="search-text">Horas registradas</label>
+                        <label for="search-type" class="state-text">40 horas</label>
+                    </div>
+                    <div class="left_children">
+                        <label for="search-type" class="search-text">Total de horas</label>
+                        <label for="search-type" class="state-text">44 horas</label>
                     </div>
                 </div>
                 
                 <div class="left">
                     <div class="right_children">
-                        <label for="search-type" class="search-text">Estado de carga horaria</label>
-                        <label for="search-type" class="state-text">Incompleto</label>
+                        <label for="search-type" class="search-text">Fecha límite</label>
+                        <label for="search-type" class="state-text">24/10/2024</label>
+                    </div>
+                    <div class="right_children">
+                        <label for="search-type" class="search-text">Estado</label>
+                        <label for="search-type" class="state-text">No cumplido</label>
                     </div>
                 </div>
             </div>
-
-            <div class="excel-button">
-              <button>Descargar excel</button>   
-            </div>  
 
             <div class="tabla-container">
                 <table class="styled-table">
                     <thead>
                         <tr>
-                            <th rowspan="2">Apellidos y nombres</th>
                             <th rowspan="2" class="vert">Condición</th>
                             <th rowspan="2" class="vert">Categoría o Tipo de Contrato</th>
                             <th rowspan="2" class="vert">D.H. o Clasificación</th>
@@ -97,38 +96,15 @@
                             <th class="vert">Investigación no monetaria</th>
                             <th class="vert">Responsabilidad Social y </br> Extensión Universitaria</th>
                             <th class="vert">Tutoría (*)</th>
-                            <th class="vert">Asesoría Académica </br>(Retroalimentación) (*)</th>
+                            <th class="vert">Asesoría Académica</br>(Retroalimentación) (*)</th>
                             <th class="vert">Asesoría de tesis (*)</th>
-                            <th class="vert">Asesoría de estudiantes </br>en proyectos de inv.</th>
+                            <th class="vert">Asesoría de estudiantes</br>en proyectos de inv.</th>
                             <th class="vert">Gestión universitaria</th>
-                            <th class="vert">Actividades Administrativas comp.*</th>
+                            <th class="vert">Actividades</br>Administrativas comp.*</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>GUARNIZ ANTICONA SANDRO<br>Código UNI: 20208297K<br>DNI: 08072506</td>
-                            <td>N</td>
-                            <td>AX</td>
-                            <td>TC-40</td>
-                            <td>44</td>
-                            <td>0</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>10</td>
-                            <td>10</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>HERNANDEZ DIAZ VICTOR<br>Código UNI: 20148351D<br>DNI: 2551194</td>
                             <td>N</td>
                             <td>AX</td>
                             <td>TC-40</td>
@@ -153,7 +129,8 @@
                 </table>
             </div>
             <div class="salida">
-                <a href="./01_menu-supervision.php">Regresar</a>
+                <a href="./02_gestion-plan-actividades.php">Regresar</a>
+                <a href="">Registrar</a>
             </div>
         </section>
 

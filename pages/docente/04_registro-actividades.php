@@ -97,7 +97,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Registro de Actividades no Lectivas</p>   
+              <p>Registro de Actividades Realizadas</p>   
             </div>
 
             <div class="search">
@@ -197,7 +197,7 @@
                 </table>
             </div>
             <div class="salida">
-                <a href="">Regresar</a>
+                <a href="./01_menu-docente.php">Regresar</a>
                 <button href="" id="agregarButton">Agregar</button>
             </div>
         </section>
