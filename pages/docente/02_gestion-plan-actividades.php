@@ -62,66 +62,9 @@
                     <div class="button-inf_white"></div>
                 </div>
             </div>
-
-            <div class="tabla-container">
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th rowspan="2" class="vert">Condición</th>
-                            <th rowspan="2" class="vert">Categoría o Tipo de Contrato</th>
-                            <th rowspan="2" class="vert">D.H. o Clasificación</th>
-                            <th rowspan="2" class="vert">Total de horas (*)</th>
-                            <th colspan="3">Actividad lectiva</th>
-                            <th colspan="12">Actividades no lectiva (horas por semana)</th>
-                        </tr>
-                        <tr>
-                            <th class="vert">Teoría</th>
-                            <th class="vert">Práctica</th>
-                            <th class="vert">Reducción de Carga Lectiva</th>
-
-                            <th class="vert">Preparación y evaluación</th>
-                            <th class="vert">Capacitación continua</th>
-                            <th class="vert">Materiales formativos</th>
-                            <th class="vert">Investigación</th>
-                            <th class="vert">Investigación no monetaria</th>
-                            <th class="vert">Responsabilidad Social y </br> Extensión Universitaria</th>
-                            <th class="vert">Tutoría (*)</th>
-                            <th class="vert">Asesoría Académica</br>(Retroalimentación) (*)</th>
-                            <th class="vert">Asesoría de tesis (*)</th>
-                            <th class="vert">Asesoría de estudiantes</br>en proyectos de inv.</th>
-                            <th class="vert">Gestión universitaria</th>
-                            <th class="vert">Actividades</br>Administrativas comp.*</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>N</td>
-                            <td>AX</td>
-                            <td>TC-40</td>
-                            <td>44</td>
-                            <td>0</td>
-                            
-                            <td>12</td>
-                            <td>0</td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                            <td><input type="text" value="" class="input-doc-nl"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            
             <div class="salida">
                 <a href="">Regresar</a>
-                <a href="">Registrar</a>
             </div>
         </section>
 
