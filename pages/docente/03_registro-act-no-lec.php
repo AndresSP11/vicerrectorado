@@ -109,21 +109,21 @@
                             <td>AX</td>
                             <td>TC-40</td>
                             <td>44</td>
-                            <td>0</td>
+                            <td>50</td>
                             <td>12</td>
-                            <td>0</td>
                             <td>12</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>10</td>
-                            <td>10</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><input class="input-table" type="text" id="prep-eva"></td>
+                            <td><input class="input-table" type="text" id="capa-cont"></td>
+                            <td><input class="input-table" type="text" id="mate-form"></td>
+                            <td><input class="input-table" type="text" id="inve"></td>
+                            <td><input class="input-table" type="text" id="inve-mone"></td>
+                            <td><input class="input-table" type="text" id="resp-soci"></td>
+                            <td><input class="input-table" type="text" id="tuto"></td>
+                            <td><input class="input-table" type="text" id="ases-acad"></td>
+                            <td><input class="input-table" type="text" id="ases-tes"></td>
+                            <td><input class="input-table" type="text" id="ases-estu"></td>
+                            <td><input class="input-table" type="text" id="gest-univ"></td>
+                            <td><input class="input-table" type="text" id="acti-admi"></td>
                         </tr>
                     </tbody>
                 </table>
