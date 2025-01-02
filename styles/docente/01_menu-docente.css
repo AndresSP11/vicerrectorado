@@ -16,7 +16,7 @@ header{
 .fondo{
     position: relative;
     height: 100vh;
-    background: url('/imagenes/reunionimg.png');
+    background: url('../imagenes/reunionimg.png');
     /* border: 2px solid rgb(255, 204, 0); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,6 +118,7 @@ header{
     font-family: "Oswald", sans-serif;
     padding-left: 20px;
     padding-top: 5px;
+    text-decoration: none;
 }
 .button-inf_white{
     width: 100%;

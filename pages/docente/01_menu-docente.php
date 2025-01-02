@@ -47,19 +47,12 @@
             <h1 class="user-welcome">Bienvenido, Jorge Canchano Minaya</h1>
             <div>
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Propuesta de Actividades</div>
-                    <div class="button-inf_white left_children">
-                        <label for="search-type" class="search-text">Período:</label>
-                        <select id="seleccion_tipo" name="search-type">
-                            <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="24-1">24-1</option>
-                            <option value="24-2">24-2</option>
-                        </select>
-                    </div>
+                    <a class="button-sup_red" href="./02_gestion-plan-actividades.php" >Gestión de Propuesta de Actividades</a>
+                    <div class="button-inf_white"></div>
                 </div>
                 
                 <div class="button_n">
-                    <div class="button-sup_red">Gestión de Actividades Realizadas</div>
+                    <a class="button-sup_red" href="./04_registro-actividades.php">Gestión de Actividades Realizadas</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>

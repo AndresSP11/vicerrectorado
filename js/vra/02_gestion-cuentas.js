@@ -2,18 +2,29 @@
 const modal = document.querySelector('.modal');
 const modalActividad = document.querySelector('#modal_usuario');
 const overlay = document.getElementById('overlay'); 
-const buttons = document.querySelectorAll('.edit-button');
+/* const buttons = document.querySelectorAll('.edit-button'); */
 const cancelButton = document.querySelectorAll('.cancelButton');
 const acceptButton = document.querySelectorAll('.acceptButton');
 
+const container = document.getElementById('tabla-container');
 
 // Abrir modal actividad
-buttons.forEach(openButton => {
+container.addEventListener('click', (event) => { /* Delegacion de eventos */
+    const target = event.target;
+    if (target.classList.contains('edit-button')) {
+        // Interactuar con el elemento dinámico
+        modalActividad.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    }
+});
+
+// Abrir modal actividad
+/* buttons.forEach(openButton => {
     openButton.addEventListener('click', () => {
         modalActividad.classList.remove('hidden');
         overlay.classList.remove('hidden');
     });
-});
+}); */
 
 // Cerrar modal con los botones cancelar y aceptar
 cancelButton.forEach(closeButton => {

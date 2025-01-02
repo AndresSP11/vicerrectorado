@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Actividades</title>
-    <link rel="stylesheet" href="/styles/docente/03_registro-actividades.css">
+    <link rel="stylesheet" href="/styles/docente/04_registro-actividades.css">
     <!-- ############################################################ FONTS #################################################################### -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
     </div>
 
     <!-- Modal actividad-->
-    <div id="modal_actividad" class="modal hidden hidden hidden hidden">
+    <div id="modal_actividad" class="modal hidden">
         <h2>Registrar de Actividad</h2>
         <div class="form">
             <div class="section">
@@ -97,7 +97,7 @@
 
         <section class="container">
             <div class="title-cont">
-              <p>Registro de Actividades no Lectivas</p>   
+              <p>Registro de Actividades Realizadas</p>   
             </div>
 
             <div class="search">
@@ -197,7 +197,7 @@
                 </table>
             </div>
             <div class="salida">
-                <a href="">Regresar</a>
+                <a href="./01_menu-docente.php">Regresar</a>
                 <button href="" id="agregarButton">Agregar</button>
             </div>
         </section>
