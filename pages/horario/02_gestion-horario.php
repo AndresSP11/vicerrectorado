@@ -56,12 +56,12 @@
                     <div>
                         <label for="" class="label-select">Periodo</label>
                         <select name="" id="" class="select-option">
-                            <option value="">24-1</option>
-                            <option value="">24-2</option>
-                            <option value="">25-1</option>
-                            <option value="">25-2</option>
-                            <option value="">26-1</option>
-                            <option value="">26-2</option>
+                            <option value="24-1">24-1</option>
+                            <option value="24-2">24-2</option>
+                            <option value="25-1">25-1</option>
+                            <option value="25-2">25-2</option>
+                            <option value="26-1">26-1</option>
+                            <option value="26-2">26-2</option>
                         </select>
                     </div>
                     <input type="submit" class="submit-var" value="Registro personalizado de horario">

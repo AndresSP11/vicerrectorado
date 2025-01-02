@@ -1,5 +1,9 @@
 <?php 
 
+
+/* EN ESTA APRTE DE LA PARTE DELGET VAMOS A DARLE LA DIRECCION UOBTENER LA DATA */
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -8,8 +8,6 @@ header('Content-Type: application/json'); // Establecer el tipo de contenido JSO
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-
-    
         $dato = isset($_POST['post']) ? $_POST['post'] : '';
         $query = "SELECT 
         u.id_usuario, 

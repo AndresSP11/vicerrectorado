@@ -1,4 +1,21 @@
 <?php 
+    /* Esta parte de la gestion de actividades */
+    /* Se va obtener el id */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
 <!DOCTYPE html>

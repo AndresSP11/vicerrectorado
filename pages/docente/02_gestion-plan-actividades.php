@@ -89,6 +89,7 @@
                             <th class="vert">Teoría</th>
                             <th class="vert">Práctica</th>
                             <th class="vert">Reducción de Carga Lectiva</th>
+
                             <th class="vert">Preparación y evaluación</th>
                             <th class="vert">Capacitación continua</th>
                             <th class="vert">Materiales formativos</th>
@@ -110,20 +111,21 @@
                             <td>TC-40</td>
                             <td>44</td>
                             <td>0</td>
+                            
                             <td>12</td>
                             <td>0</td>
-                            <td>12</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>10</td>
-                            <td>10</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
+                            <td><input type="text" value="" class="input-doc-nl"></td>
                         </tr>
                     </tbody>
                 </table>
