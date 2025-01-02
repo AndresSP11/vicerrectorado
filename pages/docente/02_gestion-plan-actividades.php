@@ -62,9 +62,9 @@
                     <div class="button-inf_white"></div>
                 </div>
             </div>
-            
+
             <div class="salida">
-                <a href="">Regresar</a>
+                <a href="./01_menu-docente.php">Regresar</a>
             </div>
         </section>
 
