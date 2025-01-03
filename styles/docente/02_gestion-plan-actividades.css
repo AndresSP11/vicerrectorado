@@ -453,3 +453,24 @@ table.styled-table {
     border: none;
     
 }
+
+/* DATA DE INPUT  */
+.input-table{
+    display: flex;
+    width:40px;
+    font-size: 1.4rem;
+    border:none;
+}
+
+#registrar-btn{
+    margin-top: 10px;
+    background-color: blue;
+    padding: 6px 40px;
+    font-size: 1.8rem;
+    border-radius: 2px;
+    transition: ease-in-out .4s ;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
