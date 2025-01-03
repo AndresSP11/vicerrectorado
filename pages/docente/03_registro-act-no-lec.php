@@ -1,4 +1,20 @@
 <?php 
+    echo('Estamos en cycle');
+    include_once('../../config/config.php');
+    $db = conectarDB();
+    
+    var_dump($_GET);
+    $id = $_GET['cycle'];
+   
+    if(empty($id)){
+        header('Location: /pages/docente/02_gestion-plan-actividades.php');
+    }
+
+    echo($id);
+   
+    /* EN ESTA PARTE SE VERIFICARA SI AL PARTE DEL CICLO EXISTE O NO EN LA TABLA
+     ASI QUE AQUI VERIFICAREMSOS AL DATA DEL $ID PRIMERO */
+
 
 ?>
 <!DOCTYPE html>

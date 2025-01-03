@@ -23,8 +23,7 @@ let objectTotal = [
         horas: prep_evaluacion.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -32,8 +31,7 @@ let objectTotal = [
         horas: capa_cont.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -41,8 +39,7 @@ let objectTotal = [
         horas: mate_form.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -50,8 +47,7 @@ let objectTotal = [
         horas: inve.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -59,8 +55,7 @@ let objectTotal = [
         horas: inve_mone.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -68,8 +63,7 @@ let objectTotal = [
         horas: resp_soci.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -77,8 +71,7 @@ let objectTotal = [
         horas: tuto.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -86,8 +79,7 @@ let objectTotal = [
         horas: ases_acad.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -95,8 +87,7 @@ let objectTotal = [
         horas: ases_tes.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -104,8 +95,7 @@ let objectTotal = [
         horas: ases_estu.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
 
     {
@@ -114,8 +104,7 @@ let objectTotal = [
         horas: gest_univ.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
     {
         name: null,
@@ -123,14 +112,24 @@ let objectTotal = [
         horas: acti_admi.value,
         doc_evidencia: null,
         situacion: 'plan',
-        cumplimiento: null,
-        periodo: null
+        cumplimiento: null
     },
 ]
 
 console.log(objectTotal);
 
+// Obtener la URL actual
+const urlParams = new URLSearchParams(window.location.search);
 
+// Obtener el valor del parámetro "cycle"
+const cycle = urlParams.get('cycle');
+
+// Verificar si existe el parámetro "cycle"
+if (cycle) {
+    console.log('Ciclo seleccionado:', cycle);
+} else {
+    console.log('No se recibió el parámetro "cycle".');
+}
 // Lista de todos los inputs
 let inputs = [
     prep_evaluacion,
@@ -178,6 +177,7 @@ async function sendObject() {
   
   const data = new FormData();
   data.append("data", JSON.stringify(objectTotal));
+  data.append("cycle", cycle);
   try {
     const url = "../../apis/docente/actividades-insertar.php";
     const resultado = await fetch(url, {
@@ -188,11 +188,12 @@ async function sendObject() {
     const respuesta = await resultado.json();
     /* Respuesta de Data */
     
-    const dataArreglo=JSON.parse(respuesta);
+    console.log(respuesta);
+    /* const dataArreglo=JSON.parse(respuesta);
     
     dataArreglo.map((data)=>{
         console.log(data);
-    })
+    }) */
     
   } catch (error) {
     console.log(error);
