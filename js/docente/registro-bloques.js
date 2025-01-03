@@ -18,101 +18,52 @@ let buttonSendApi= document.getElementById('registrar-btn');
 
 let objectTotal = [
     {
-        name: null,
-        bloque: 'Preparación de evaluación',
+        name: 'Preparación de evaluación',
         horas: prep_evaluacion.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Capacitación continua',
+        name: 'Capacitación continua',
         horas: capa_cont.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Materiales formativos',
+        name: 'Materiales formativos',
         horas: mate_form.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Investigacion',
+        name: 'Investigacion',
         horas: inve.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Investigacion no monetaria',
+        name: 'Investigacion no monetaria',
         horas: inve_mone.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Responsabilidad Social y Extension Universitaria',
+        name: 'Responsabilidad Social y Extension Universitaria',
         horas: resp_soci.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Tutoría (*)',
+        name: 'Tutoría (*)',
         horas: tuto.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Asesoría Académica (Retroalimentación)',
+        name: 'Asesoría Académica (Retroalimentación)',
         horas: ases_acad.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Asesoría de tesis',
+        name: 'Asesoría de tesis',
         horas: ases_tes.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Asesoría de estudiantes en proyectos de inv.',
+        name: 'Asesoría de estudiantes en proyectos de inv.',
         horas: ases_estu.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
-
     {
-        name: null,
-        bloque: 'Gestion Universitaria',
+        name: 'Gestion Universitaria',
         horas: gest_univ.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
     {
-        name: null,
-        bloque: 'Actividades administrativas comp.',
+        name: 'Actividades administrativas comp.',
         horas: acti_admi.value,
-        doc_evidencia: null,
-        situacion: 'plan',
-        cumplimiento: null
     },
 ]
 
@@ -179,11 +130,12 @@ async function sendObject() {
   data.append("data", JSON.stringify(objectTotal));
   data.append("cycle", cycle);
   try {
-    const url = "../../apis/docente/actividades-insertar.php";
+    const url = "../../apis/docente/bloques-insertar.php";
     const resultado = await fetch(url, {
       method: "POST",
       body: data,
     });
+    
     /* Obtención de los valroes correspondientes */
     const respuesta = await resultado.json();
     /* Respuesta de Data */
@@ -196,15 +148,10 @@ async function sendObject() {
     }) */
     
   } catch (error) {
+    console.log(data);
     console.log(error);
   }
 }
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', updateTotal);
 

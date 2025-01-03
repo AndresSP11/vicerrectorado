@@ -152,6 +152,6 @@
 
     </div>
     
-    <script src="/js/docente/registro-no-lectivas.js"></script>
+    <script src="/js/docente/registro-bloques.js"></script>
 </body>
 </html>
