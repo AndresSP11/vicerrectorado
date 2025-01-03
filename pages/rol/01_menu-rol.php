@@ -62,19 +62,19 @@
 
         </section>
     </div>
+
+    <script>
+    import { actualizarHref } from '/js/rol/01_menu-rol.js';
+
+        actualizarHref('seleccion_tipo', 'continuar', {
+            vra: '/pages/vra/01_menu-vra.php',
+            decano: '/pages/decano/01_menu-decano.php',
+            departamento: '/pages/departamento-academico/01_menu-departamento.php',
+            supervision: '/pages/supervision/01_menu-supervision.php',
+            horario: '/pages/horario/01_menu-horario.php',
+            docente: '/pages/docente/01_menu-docente.php',
+        });
+    </script>
 </body>
 
 </html>
-
-<script>
-    import { actualizarHref } from '/js/rol/01_menu-rol.js';
-
-    actualizarHref('seleccion_tipo', 'continuar', {
-        vra: '/pages/vra/01_menu-vra.php',
-        decano: '/pages/decano/01_menu-decano.php',
-        departamento: '/pages/departamento-academico/01_menu-departamento.php',
-        supervision: '/pages/supervision/01_menu-supervision.php',
-        horario: '/pages/horario/01_menu-horario.php',
-        docente: '/pages/docente/01_menu-docente.php',
-    });
-</script>
