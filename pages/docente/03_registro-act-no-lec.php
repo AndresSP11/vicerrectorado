@@ -1,4 +1,20 @@
 <?php 
+    echo('Estamos en cycle');
+    include_once('../../config/config.php');
+    $db = conectarDB();
+    
+    var_dump($_GET);
+    $id = $_GET['cycle'];
+   
+    if(empty($id)){
+        header('Location: /pages/docente/02_gestion-plan-actividades.php');
+    }
+
+    echo($id);
+   
+    /* EN ESTA PARTE SE VERIFICARA SI AL PARTE DEL CICLO EXISTE O NO EN LA TABLA
+     ASI QUE AQUI VERIFICAREMSOS AL DATA DEL $ID PRIMERO */
+
 
 ?>
 <!DOCTYPE html>
@@ -54,11 +70,11 @@
                 <div class="left">
                     <div class="left_children">
                         <label for="search-type" class="search-text">Horas registradas</label>
-                        <label for="search-type" class="state-text">40 horas</label>
+                        <label for="search-type" class="state-text" >40 horas</label>
                     </div>
                     <div class="left_children">
                         <label for="search-type" class="search-text">Total de horas</label>
-                        <label for="search-type" class="state-text">44 horas</label>
+                        <label for="search-type" class="state-text"><p id="total-horas"></p><span>Horas</span></label>
                     </div>
                 </div>
                 
@@ -89,7 +105,7 @@
                             <th class="vert">Teoría</th>
                             <th class="vert">Práctica</th>
                             <th class="vert">Reducción de Carga Lectiva</th>
-                            <th class="vert">Preparación y evaluación</th>
+                            <th class="vert" >Preparación y evaluación</th>
                             <th class="vert">Capacitación continua</th>
                             <th class="vert">Materiales formativos</th>
                             <th class="vert">Investigación</th>
@@ -112,29 +128,30 @@
                             <td>50</td>
                             <td>12</td>
                             <td>12</td>
-                            <td><input class="input-table" type="text" id="prep-eva"></td>
-                            <td><input class="input-table" type="text" id="capa-cont"></td>
-                            <td><input class="input-table" type="text" id="mate-form"></td>
-                            <td><input class="input-table" type="text" id="inve"></td>
-                            <td><input class="input-table" type="text" id="inve-mone"></td>
-                            <td><input class="input-table" type="text" id="resp-soci"></td>
-                            <td><input class="input-table" type="text" id="tuto"></td>
-                            <td><input class="input-table" type="text" id="ases-acad"></td>
-                            <td><input class="input-table" type="text" id="ases-tes"></td>
-                            <td><input class="input-table" type="text" id="ases-estu"></td>
-                            <td><input class="input-table" type="text" id="gest-univ"></td>
-                            <td><input class="input-table" type="text" id="acti-admi"></td>
+                            <td><input class="input-table" type="text" id="prep-eva" value="0"></td>
+                            <td><input class="input-table" type="text" id="capa-cont" value="0"></td>
+                            <td><input class="input-table" type="text" id="mate-form" value="0"></td>
+                            <td><input class="input-table" type="text" id="inve" value="0"></td>
+                            <td><input class="input-table" type="text" id="inve-mone" value="0"></td>
+                            <td><input class="input-table" type="text" id="resp-soci" value="0"></td>
+                            <td><input class="input-table" type="text" id="tuto" value="0"></td>
+                            <td><input class="input-table" type="text" id="ases-acad" value="0"></td>
+                            <td><input class="input-table" type="text" id="ases-tes" value="0"></td>
+                            <td><input class="input-table" type="text" id="ases-estu" value="0"></td>
+                            <td><input class="input-table" type="text" id="gest-univ" value="0"></td>
+                            <td><input class="input-table" type="text" id="acti-admi" value="0" ></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="salida">
                 <a href="./02_gestion-plan-actividades.php">Regresar</a>
-                <a href="">Registrar</a>
+                <button id="registrar-btn">Registrar</a>
             </div>
         </section>
 
     </div>
-    <script src="/js/vra/gestion-actividades-doc.js"></script>
+    
+    <script src="/js/docente/registro-no-lectivas.js"></script>
 </body>
 </html>

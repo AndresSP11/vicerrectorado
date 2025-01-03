@@ -51,14 +51,22 @@
                         <label for="search-type" class="search-text">Período:</label>
                         <select id="seleccion_tipo" name="search-type">
                             <option value="" disabled selected hidden>Seleccionar</option>
-                            <option value="24-1">24-1</option>
-                            <option value="24-2">24-2</option>
+                            <option value="24-1" class="option-detected">24-1</option>
+                            <option value="24-2" class="option-detected">24-2</option>
+                            <option value="25-1" class="option-detected">25-1</option>
+                            <option value="25-2" class="option-detected">25-2</option>
+                            <option value="26-1" class="option-detected">26-1</option>
+                            <option value="26-2" class="option-detected">26-2</option>
+                            <option value="27-1" class="option-detected">27-1</option>
+                            <option value="27-2" class="option-detected">27-2</option>
+                            <option value="28-1" class="option-detected">28-1</option>
+                            <option value="28-2" class="option-detected">28-2</option>
                         </select>
                     </div>
                 </div>
                 
                 <div class="button_n">
-                    <a class="button-sup_red" href="./03_registro-act-no-lec.php">Registro de Actividades No Lectivas</a>
+                    <a class="button-sup_red" id="reg-act-lec" href="./03_registro-act-no-lec.php">Registro de Actividades No Lectivas</a>
                     <div class="button-inf_white"></div>
                 </div>
             </div>
@@ -68,7 +76,7 @@
             </div>
         </section>
 
-
+    <script src="/js/docente/02_gestion-plan-actividades.js"></script>
 
     </div>
 </body>
